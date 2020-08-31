@@ -40,7 +40,7 @@ h4 {
 }
 
 section {
-    padding: 1em;
+    padding: 2em 3em;
     text-align: center;
     background-color: white;
     border-radius: 1em;
@@ -68,7 +68,7 @@ ul {
 }
 
 .workplace > img {
-    width: 120px;
+    width: 140px;
 }
 
 .workplace > span {
@@ -78,6 +78,21 @@ ul {
 
 .workplace > h4 {
     margin-top: 0;
+}
+
+.workplace > a {
+    font-size: 11px;
+}
+
+#profile {
+    width: 120px;
+    height: 120px;
+    background-image: url("profile.jpeg");
+    background-position: center;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1em;
 }
 
 section > ul > li {
@@ -95,4 +110,24 @@ section > ul > li {
 
 section > ul > li > img {
     width: 120px;
+}
+
+#twitter {
+    border-color: #1DA1F2;
+}
+
+#linkedin {
+    border-color: #2867B2;
+}
+
+#instagram {
+    border-color: #C13584;
+}
+
+#medium {
+    border-color: #000;
+}
+
+#opensource > li > p {
+    font-size: 11px;
 }

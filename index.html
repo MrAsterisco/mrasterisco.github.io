@@ -8,20 +8,20 @@
     </head>
     <body>
         <section>
-            <img src="profile.jpeg" alt="Alessio Moiso's Profile Picture" />
+            <div id="profile"></div>
 
             <h1>
                 Hi, my name's Alessio and I love computers.
             </h1>
             <summary class="workplace">
-                <h3>My main job is at:</h3>
+                <h3>My prime job is at:</h3>
 
-                <img src="logo.svg" alt="Pillo Health" /><br/>
-                <a href="https://www.pillohealth.com">www.pillohealth.com</a>
+                <img src="stocard.png" alt="Stocard" /><br/>
+                <a href="https://stocardapp.com">www.stocardapp.com</a>
                 <br/>
                 <br/>
                 <span>as</span>
-                <h4>Director of Mobile</h4>
+                <h4>Senior iOS Developer</h4>
             </summary>
             <summary class="workplace">
                 <h3>In my spare time, I also work with:</h3>
@@ -39,19 +39,19 @@
             <p>I'm not that active on social networks, and I'm not that interesting either, but if you want to add a +1 to the people you're following, here are my contacts.</p>
 
             <ul>
-                <li>
+                <li id="twitter">
                     <h4>Twitter</h4>
                     <a href="https://twitter.com/MrAsterisco93">@MrAsterisco93</a>
                 </li>
-                <li>
+                <li id="linkedin">
                     <h4>LinkedIn</h4>
                     <a href="https://www.linkedin.com/in/alessiomoiso1993/">Alessio Moiso</a>
                 </li>
-                <li>
+                <li id="instagram">
                     <h4>Instagram</h4>
                     <a href="https://www.instagram.com/mrasterisco/">mrasterisco</a>
                 </li>
-                <li>
+                <li id="medium">
                     <h4>Medium</h4>
                     <a href="https://medium.com/@alessio.mm">@alessio.mm</a>
                 </li>
@@ -61,7 +61,7 @@
             <h3>Open-source Projects</h3>
             <p>I constantly try to be on the edge of new technologies. Considering the speed at which technology progresses these day, I know it's not possible, in fact I am often behind. But, well, I try. Below, there is a list of all the software that I have touched, for one reason or another.</p>
 
-            <ul>
+            <ul id="opensource">
                 <li>
                     <h4>RxFireAuth</h4>
                     <a href="https://github.com/MrAsterisco/RxFireAuth">RxFireAuth on GitHub</a>
@@ -69,9 +69,21 @@
                     <p>Swift library based on the Firebase SDK and RxSwift, available on CocoaPods.</p>
                 </li>
                 <li>
+                    <h4>RxFireAuth-Android</h4>
+                    <a href="https://github.com/MrAsterisco/RxFireAuth-Android">RxFireAuth-Android on GitHub</a>
+                    <summary>A Rx-wrapper around the Firebase Authentication SDK for Android.</summary>
+                    <p>Kotlin library based on the Firebase SDK and RxKotlin, available on Bintray.</p>
+                </li>
+                <li>
                     <h4>Time</h4>
                     <a href="https://github.com/MrAsterisco/Time">Time on GitHub</a>
                     <summary>Type-safe calculations in Kotlin multiplatform.</summary>
+                    <p>Kotlin multiplatform Shared Library forked from Time for Android.</p>
+                </li>
+                <li>
+                    <h4>SortedList</h4>
+                    <a href="https://github.com/MrAsterisco/SortedList">SortedList on GitHub</a>
+                    <summary>Kotlin multiplatform implementation of a sorted list.</summary>
                     <p>Kotlin multiplatform Shared Library forked from Time for Android.</p>
                 </li>
                 <li>
@@ -93,10 +105,10 @@
                     <p>Swift library.</p>
                 </li>
                 <li>
-                    <h4>KotlinMultiplatformPlayground</h4>
-                    <a href="https://github.com/MrAsterisco/KotlinMultiPlatformPlayground">KotlinMultiplatformPlayground on GitHub</a>
-                    <summary>A playground project to test Kotlin Multiplatform on Android and iOS.</summary>
-                    <p>Kotlin Multiplatform project.</p>
+                    <h4>StyleableLabel</h4>
+                    <a href="https://github.com/MrAsterisco/StyleableLabel">StyleableLabel on GitHub</a>
+                    <summary>A UILabel subclass that supports directional content insets and simplifies styling.</summary>
+                    <p>Swift UILabel subclass.</p>
                 </li>
                 <li>
                     <h4>Core</h4>
@@ -119,15 +131,15 @@
 
             <ul>
                 <li>
-                    <img src="kotlin.png" alt="Kotlin" />
-                    <h4>Kotlin</h4>
-                    <a href="https://kotlinlang.org">kotlinlang.org</a>
-                    <p>My bread and butter.</p>
-                </li>
-                <li>
                     <img src="swift.png" alt="Swift" />
                     <h4>Swift</h4>
                     <a href="https://swift.org">swift.org</a>
+                    <p>My bread and butter.</p>
+                </li>
+                <li>
+                    <img src="kotlin.png" alt="Kotlin" />
+                    <h4>Kotlin</h4>
+                    <a href="https://kotlinlang.org">kotlinlang.org</a>
                     <p>My bread and butter.</p>
                 </li>
                 <li>
@@ -140,7 +152,7 @@
                     <img src="csharp.png" alt="C#" />
                     <h4>C#</h4>
                     <a href="http://csharp.net">csharp.net</a>
-                    <p>My favorite language after Kotlin and Swift; I have used it in ASP.NET, WPF and Xamarin apps.</p>
+                    <p>My favorite language after the two above.</p>
                 </li>
                 <li>
                     <img src="python.png" alt="Python" />
