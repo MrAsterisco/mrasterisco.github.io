@@ -9,8 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-brands-svg-icons": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
+    "@prisma/client": "3.12.0",
+    "babel-plugin-macros": "^3.1.0",
     "bulma": "^0.9.3",
     "next": "12.1.4",
+    "prisma": "^3.12.0",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "sass": "^1.49.11"
@@ -20,6 +27,10 @@
     "@types/react": "^18.0.0",
     "eslint": "8.12.0",
     "eslint-config-next": "12.1.4",
+    "ts-node": "^10.7.0",
     "typescript": "^4.6.3"
+  },
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
   }
 }

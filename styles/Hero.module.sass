@@ -8,20 +8,30 @@
 .heroTitle
     @extend .title
 
+    span
+        font-weight: bold
+        color: $highlight
+
 .heroSubtitle
     @extend .subtitle
 
-.heroList
-    ul
-        display: inline
+.heroContent
+    @extend .columns
+    @extend .is-vcentered
 
-        li
-            display: inline
+.leftHeroContent
+    @extend .column
+    @extend .is-four-fifths
 
-.heroListDisabled
-    opacity: 0.5
-    text-decoration: line-through
+.rightHeroContent
+    @extend .column
+    text-align: right
 
-.heroListEnabled
-    opacity: 1.0
-    font-weight: bold
+    a
+        margin-right: 1em
+
+    a:hover
+        color: $secondary !important
+    
+    a:last-child
+        margin-right: 0
