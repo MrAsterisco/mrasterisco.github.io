@@ -17,6 +17,7 @@ const ProjectTile = (
         <li key={project.id} className={styles.projectCard}>
             <div className={styles.projectCardContent}>
                 <p className={styles.projectCardName}>{project.name}</p>
+                <p className={styles.projectCardTimeframe}>{project.timePeriod}</p>
                 <p className={styles.projectCardDescription}>{project.description}</p>
 
                 <ul className={styles.projectCardTechList}>

@@ -8,9 +8,11 @@ CREATE TYPE "LinkType" AS ENUM ('APPSTORE', 'GENERIC');
 CREATE TABLE "Project" (
     "id" SERIAL NOT NULL,
     "name" TEXT NOT NULL,
+    "timePeriod" TEXT NOT NULL,
     "type" "ProjectType" NOT NULL,
     "description" TEXT NOT NULL,
     "technologies" TEXT NOT NULL,
+    "sortIndex" INTEGER NOT NULL,
 
     CONSTRAINT "Project_pkey" PRIMARY KEY ("id")
 );

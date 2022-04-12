@@ -13,10 +13,12 @@ datasource db {
 model Project {
   id Int @id @default(autoincrement())
   name String
+  timePeriod String
   type ProjectType
   description String @db.Text
   technologies String
   links Link[]
+  sortIndex Int
 }
 
 enum ProjectType {

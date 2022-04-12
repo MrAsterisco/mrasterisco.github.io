@@ -7,6 +7,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     res
         .status(200)
         .json(
-            await prisma.project.findMany({include: {links: true}})
+            await prisma.project.findMany(
+                {
+                    include: {links: true},
+                    orderBy: [{sortIndex: "asc"}]
+                }
+            )
         )
 }
