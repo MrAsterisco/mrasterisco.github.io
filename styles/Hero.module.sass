@@ -16,22 +16,54 @@
     @extend .subtitle
 
 .heroContent
-    @extend .columns
-    @extend .is-vcentered
+    @extend .container
+    @extend .has-text-centered
 
-.leftHeroContent
-    @extend .column
-    @extend .is-four-fifths
 
-.rightHeroContent
-    @extend .column
-    text-align: right
-
+.socialContainer
     a
         margin-right: 1em
 
     a:hover
-        color: $secondary !important
+        color: $highlight !important
     
     a:last-child
         margin-right: 0
+
+.heroHead
+    @extend .hero-head
+    
+.mainNavbar
+    @extend .has-text-centered
+    margin-bottom: 1em
+
+    a
+        display: inline-block
+        margin-right: 1em
+
+    a:hover
+        color: $highlight !important
+
+    a:last-child
+        margin-right: 0
+
+.navbarItem
+    border-radius: 0.25rem
+    font-size: 12px
+    font-weight: bold
+    text-transform: uppercase
+    padding: 1em
+    color: $secondary
+
+.navbarItemActive
+    @extend .has-background-link-dark
+    color: $highlight !important
+
+.navbarItem:hover
+    @extend .has-background-link-dark
+
+.mainContainer
+    @extend .container
+
+.navbarMenu
+    @extend .navbar-menu

@@ -1,13 +1,10 @@
-import Head from 'next/head'
-import Hero from '../components/Hero/Hero'
 import RolesShowcase from '../components/Roles/RolesShowcase'
 import SectionTitle from '../components/Generic/SectionTitle'
 import LanguagesShowcase from '../components/Languages/LanguagesShowcase'
-import ProjectsShowcase from '../components/Projects/ProjectsShowcase'
 import { GetServerSideProps, InferGetServerSidePropsType } from 'next'
-import IProject from '../models/IProject'
 
 import styles from '../styles/Home.module.sass'
+import Link from 'next/link'
 
 export default function Home(
   { 
@@ -16,23 +13,21 @@ export default function Home(
   } : InferGetServerSidePropsType<typeof getServerSideProps>
 ) {
   return (
-    <div>
-      <Head>
-        <meta name="theme-color" content="#1572A1" />
-      </Head>
-      <Hero />
-      <section className={styles.wholeContent}>
+    <div className={styles.main}>
+      <section>
         <SectionTitle title='What do I do?' subtitle='A whole lot of nothing but most of the days (and some nights) you can find me at:' />
         <RolesShowcase />
         <div className={styles.sectionFooter}>
           Interested in my complete work experience? <a href="#" target="_blank">Visit my LinkedIn profile</a>.
         </div>
       </section>
-      <section className={styles.wholeContent}>
-        <SectionTitle title='What are some of my projects?' subtitle="A unordered list of projects, apps and websites I created or contributed to:" />
-        <ProjectsShowcase projects={projects} />
+      <section>
+        <SectionTitle title='What are some of my projects?' subtitle="A unordered showcase of the projects, apps and websites I created or contributed to:" />
+        <div className={styles.sectionFooter}>
+          Interested in the full list? <Link href="/projects"><a>See my projects</a></Link>
+        </div>
       </section>
-      <section className={styles.wholeContent}>
+      <section>
         <SectionTitle title='What "languages" do I speak?' subtitle="Here's a non-definitive list of the programming languages that I know and use:" />
         <LanguagesShowcase languages={languages} />
       </section>

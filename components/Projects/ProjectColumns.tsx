@@ -1,12 +1,12 @@
 import ProjectTile from "./ProjectTile";
-import styles from '../../styles/Projects.module.sass'
+import styles from '../../styles/ProjectColumns.module.sass'
 import IProject from '../../models/IProject';
 
 interface ProjectsProps {
     projects: IProject[]
 }
 
-const ProjectsShowcase = (
+const ProjectColumns = (
     {
         projects
     }: ProjectsProps
@@ -56,4 +56,4 @@ const ProjectsShowcase = (
     )
 }
 
-export default ProjectsShowcase
+export default ProjectColumns
