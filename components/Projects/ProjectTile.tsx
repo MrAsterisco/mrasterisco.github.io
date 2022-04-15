@@ -34,7 +34,7 @@ const ProjectTile = (
                             .map((link) => {
                                 return (
                                     <li>
-                                        <a href={link.uri} target='_blank'>
+                                        <a href={link.content} target='_blank'>
                                             <span>
                                                 <FontAwesomeIcon icon={iconForLinkType(link.type)} />
                                             </span>

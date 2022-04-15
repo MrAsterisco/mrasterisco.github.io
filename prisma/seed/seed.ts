@@ -1,12 +1,16 @@
 import { PrismaClient } from "@prisma/client";
-import Projects from "./projects";
+import { Enterprise, Products } from "./projects";
 import Languages from "./languages";
 
 const prisma = new PrismaClient()
 
 async function main() {
-    Projects.map(async (p) => await prisma.project.create({data: p}))
-    Languages.map(async (l) => await prisma.language.create({data: l}))
+    Enterprise
+        .concat(Products)
+        .map(async (p) => await prisma.project.create({data: p}))
+
+    Languages
+        .map(async (l) => await prisma.language.create({data: l}))
 }
 
 main()
