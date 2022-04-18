@@ -1,5 +1,5 @@
 import { PrismaClient } from "@prisma/client";
-import { Enterprise, Products } from "./projects";
+import { Enterprise, OpenSource, Products } from "./projects";
 import Languages from "./languages";
 
 const prisma = new PrismaClient()
@@ -7,6 +7,7 @@ const prisma = new PrismaClient()
 async function main() {
     Enterprise
         .concat(Products)
+        .concat(OpenSource)
         .map(async (p) => await prisma.project.create({data: p}))
 
     Languages

@@ -20,7 +20,7 @@ export default function Hero() {
                     var classes = [styles.navbarItem]
                     if (isCurrentPage(p)) classes.push(styles.navbarItemActive)
 
-                    return <Link href={p}><a className={classes.join(" ")}>{nameOfPage(p)}</a></Link>
+                    return <Link key={p} href={p}><a className={classes.join(" ")}>{nameOfPage(p)}</a></Link>
                   })
               }
             </nav>

@@ -28,7 +28,7 @@ export const Enterprise: Prisma.ProjectCreateInput[] = [
         type: "ENTERPRISE",
         timePeriod: "2017 - present",
         description: "InerziaSoft.eu is the official website of my dad's side hustle \"InerziaSoft\". My contributions in the company are many and a lot of my own products are published under InerziaSoft. The InerziaSoft.eu website allows users to explore our apps, potential customers to discover our Enterprise products, and anybody to ask questions and get support. Together with other peers from InerziaSoft, I rebuilt the website from scratch in 2017. I have been responsible of it ever since, publishing new updates and keeping it up-to-date.",
-        technologies: "Core,React,JavaScript,React,PostgreSQL,SASS",
+        technologies: "Core,React,JavaScript,PostgreSQL,SASS",
         sortIndex: 1,
         links: {
             create: [
@@ -79,6 +79,14 @@ export const Enterprise: Prisma.ProjectCreateInput[] = [
         sortIndex: 3
     },
     {
+        name: "The InerziaSoft Web Infrastructure",
+        type: "ENTERPRISE",
+        timePeriod: "2016 - present",
+        description: "Most of the Enterprise apps published by InerziaSoft are running on a custom server that I built and manage regularly. The server runs ESXI and most of the services are deployed as virtual machines. The infrastructure is secured with pfSense and CloudFlare.",
+        technologies: "VMWare ESXI,pfSense,nginx,Cloudflare,UNIX,Python",
+        sortIndex: 4
+    },
+    {
         name: "DispatchConnect",
         type: "ENTERPRISE",
         timePeriod: "2016 - present",
@@ -93,7 +101,7 @@ export const Enterprise: Prisma.ProjectCreateInput[] = [
                 }
             ]
         },
-        sortIndex: 4
+        sortIndex: 5
     },
     {
         name: "Stocard for iOS",
@@ -115,7 +123,7 @@ export const Enterprise: Prisma.ProjectCreateInput[] = [
                 }
             ]
         },
-        sortIndex: 5
+        sortIndex: 6
     },
     {
         name: "Pria & Pillo Health",
@@ -133,11 +141,11 @@ export const Enterprise: Prisma.ProjectCreateInput[] = [
                 {
                     displayName: "Pria on the App Store",
                     content: "https://apps.apple.com/us/app/pria-by-black-decker/id1435313823",
-                    type: "GENERIC"
+                    type: "APPSTORE"
                 }
             ]
         },
-        sortIndex: 6
+        sortIndex: 7
     },
     {
         name: "Multiple Enterprise Web Apps",
@@ -145,7 +153,7 @@ export const Enterprise: Prisma.ProjectCreateInput[] = [
         type: "ENTERPRISE",
         description: "During this period, I contributed to multiple Web Apps developed in C# for many different scopes and different customers. I drove and built some new features, but my main focus was on improving performances, general mainteinance, and support.",
         technologies: "ASP.NET MVC,Oracle,TFS,LINQ,Entity Framework",
-        sortIndex: 3
+        sortIndex: 8
     },
     {
         name: "Progetto DAE Liguria",
@@ -153,7 +161,7 @@ export const Enterprise: Prisma.ProjectCreateInput[] = [
         type: "ENTERPRISE",
         description: "I built the iOS app from scratch allowing users to locate the closest defibrillator. This app was part of the Progetto DAE Liguria and has been removed from the App Store in 2019.",
         technologies: "Objective-C,UIKit,MapKit,SQL Lite",
-        sortIndex: 5,
+        sortIndex: 9,
         links: {
             create: [
                 {
@@ -227,7 +235,236 @@ export const Products: Prisma.ProjectCreateInput[] = [
                 },
                 {
                     displayName: "InerziaIcon on the App Store",
-                    content: "https://apps.apple.com/app/id581760164"
+                    content: "https://apps.apple.com/app/id581760164",
+                    type: "APPSTORE"
+                }
+            ]
+        }
+    },
+    {
+        name: "InerziaSmartWallpaper",
+        type: "PRODUCTS",
+        timePeriod: "2015 - 2016",
+        description: "For my first app in Swift, I wanted to build something simple that would involve some network connectivity. This small macOS utility, inspired by the Chromecast home screen, was able to download a new wallpaper every day from Bing or the Chromecast backgrounds directory.",
+        technologies: "Swift,AppKit",
+        sortIndex: 3
+    },
+    {
+        name: "InerziaStudios",
+        type: "PRODUCTS",
+        timePeriod: "2012 - 2015",
+        description: "Built for the pre-Netflix era, this app allowed macOS users to manage their movies catalogue. Among other features that made it the iTunes for movies, it also featured a custom movie player based on VLCKit and the ability to import data automatically from TMBD and Wikipedia. The app has been discontinued after the debut of Netflix in Italy in 2015.",
+        technologies: "Objective-C,AppKit,VLCKit",
+        sortIndex: 3
+    }
+]
+
+export const OpenSource: Prisma.ProjectCreateInput[] = [
+    {
+        name: "This Website",
+        type: "OPENSOURCE",
+        timePeriod: "2020 - present",
+        description: "My personal portfolio of projects and interesting facts about my career. The version you're currently browsing has been introduced in 2022, after a new rewrite using Next.js and Prisma.",
+        technologies: "Next.js,Prisma,TypeScript,React,PostgreSQL,SASS,Yarn",
+        sortIndex: 0,
+        links: {
+            create: [
+                {
+                    displayName: "This website on GitHub",
+                    content: "https://github.com/MrAsterisco/mrasteris.co",
+                    type: "GITHUB"
+                }
+            ]
+        }
+    },
+    {
+        name: "RxFireAuth",
+        type: "OPENSOURCE",
+        timePeriod: "2020 - present",
+        description: "A Reactive-compatible wrapper around the Firebase Authentication SDK for iOS written in Swift and compatible with CocoaPods and Swift Package Manager. While I created this library to simplify the development of Redirekt for iOS, the supported platforms also include Mac Catalyst and macOS.",
+        technologies: "Swift,Firebase,CocoaPods,Swift Package Manager,AppAuth,RxSwift,Jazzy",
+        sortIndex: 1,
+        links: {
+            create: [
+                {
+                    displayName: "RxFireAuth on GitHub",
+                    content: "https://github.com/MrAsterisco/RxFireAuth",
+                    type: "GITHUB"
+                },
+                {
+                    displayName: "RxFireAuth on CocoaPods",
+                    content: "https://cocoapods.org/pods/RxFireAuth",
+                    type: "GENERIC"
+                }
+            ]
+        }
+    },
+    {
+        name: "RxFireAuth-Android",
+        type: "OPENSOURCE",
+        timePeriod: "2021 - present",
+        description: "A mirror version of RxFireAuth for Android. The library is entirely written in Kotlin and it's helping me laying the foundation of Redirekt for Android.",
+        technologies: "Kotlin,Firebase,Gradle,RxKotlin",
+        sortIndex: 2,
+        links: {
+            create: [
+                {
+                    displayName: "RxFireAuth-Android on GitHub",
+                    content: "https://github.com/MrAsterisco/RxFireAuth-Android",
+                    type: "GITHUB"
+                }
+            ]
+        }
+    },
+    {
+        name: "Time",
+        type: "OPENSOURCE",
+        timePeriod: "2019 - present",
+        description: "A Kotlin Multiplatform implementation of the Time library for Android. The library uses 100% platform-independent code, which makes it compatible with any platform where Kotlin is supported.",
+        technologies: "Kotlin,Kotlin Multiplatform,Gradle,GitHub Packages",
+        sortIndex: 3,
+        links: {
+            create: [
+                {
+                    displayName: "Time on GitHub",
+                    content: "https://github.com/MrAsterisco/Time",
+                    type: "GITHUB"
+                }
+            ]
+        }
+    },
+    {
+        name: "SortedList",
+        type: "OPENSOURCE",
+        timePeriod: "2019 - present",
+        description: "An efficient implementation of a sorted list for Kotlin Multiplatform, based on an AVL tree. The library uses 100% platform-independent code.",
+        technologies: "Kotlin,Kotlin Multiplatform,Gradle,GitHub Packages",
+        sortIndex: 4,
+        links: {
+            create: [
+                {
+                    displayName: "SortedList on GitHub",
+                    content: "https://github.com/MrAsterisco/SortedList",
+                    type: "GITHUB"
+                }
+            ]
+        }
+    },
+    {
+        name: "Core",
+        type: "OPENSOURCE",
+        timePeriod: "2016 - present",
+        description: "Core is a framework to build web applications in PHP and JavaScript. It currently moves most of the Enterprise web apps of InerziaSoft with great performances and stability. It features advanced functions such as automatic routing discovery, APIs, authentication, ORM and more. It is based on the FatFree framework.",
+        technologies: "PHP,JavaScript,Python,FatFree,Composer,NPM",
+        sortIndex: 5,
+        links: {
+            create: [
+                {
+                    displayName: "Core on GitLab",
+                    content: "https://gitlab.com/InerziaSoft/Core",
+                    type: "GITLAB"
+                }
+            ]
+        }
+    },
+    {
+        name: "homebridge-hisense-tv",
+        type: "OPENSOURCE",
+        timePeriod: "2021 - present",
+        description: "A Homebridge plugin to control RemoteNow-compatible HiSense TVs. I built it from scratch to explore the Homebridge platform and also add my own TV to HomeKit. It is based on an existing Python script that communicates with the TV via MQTT.",
+        technologies: "TypeScript,Python,MQTT,Homebridge,NPM",
+        sortIndex: 6,
+        links: {
+            create: [
+                {
+                    displayName: "homebridge-hisense-tv on GitHub",
+                    content: "https://github.com/MrAsterisco/homebridge-hisense-tv",
+                    type: "GITHUB"
+                }
+            ]
+        }
+    },
+    {
+        name: "StyleableLabel",
+        type: "OPENSOURCE",
+        timePeriod: "2020 - present",
+        description: "A simple UILabel subclass that supports corner radii and content insets without breaking AutoLayout.",
+        technologies: "Swift,UIKit,CocoaPods,Swift Package Manager",
+        sortIndex: 7,
+        links: {
+            create: [
+                {
+                    displayName: "StyleableLabel on GitHub",
+                    content: "https://github.com/MrAsterisco/StyleableLabel",
+                    type: "GITHUB"
+                }
+            ]
+        }
+    },
+    {
+        name: "OAuth2-Password",
+        type: "OPENSOURCE",
+        timePeriod: "2019 - 2020",
+        description: "A fork of a Java library that implements the OAuth2-Password standard. I converted the library to Kotlin with some minor improvements. While the repository is still available, it is currently in an unsupported state.",
+        technologies: "Kotlin,Gradle,OAuth",
+        sortIndex: 8,
+        links: {
+            create: [
+                {
+                    displayName: "OAuth2-Password on GitHub",
+                    content: "https://github.com/MrAsterisco/OAuth2-Password",
+                    type: "GITHUB"
+                }
+            ]
+        }
+    },
+    {
+        name: "MSAL",
+        type: "OPENSOURCE",
+        timePeriod: "2017 - 2019",
+        description: "A fork of the original MSAL SDK from Microsoft. The library allows users to authenticate to your app using Microsoft Azure Active Directory. The original fork by Microsoft had a lot of issues and was not suitable for the needs of the Pillo Health at the time.",
+        technologies: "Objective-C,Azure,CocoaPods,Azure Active Directory",
+        sortIndex: 9,
+        links: {
+            create: [
+                {
+                    displayName: "MSAL on GitHub",
+                    content: "https://github.com/MrAsterisco/MSAL",
+                    type: "GITHUB"
+                }
+            ]
+        }
+    },
+    {
+        name: "SmartISODateFormatter",
+        type: "OPENSOURCE",
+        timePeriod: "2018 - 2019",
+        description: "An improved implementation of a DateFormatter that understands the ISO format. While Apple provides an implementation, it does not support parsing different formats at the same time, which is what I focused on in this small library. The library is compatible with iOS, macOS, watchOS and tvOS.",
+        technologies: "Swift,CocoaPods",
+        sortIndex: 10,
+        links: {
+            create: [
+                {
+                    displayName: "SmartISODateFormatter on GitHub",
+                    content: "https://github.com/MrAsterisco/SmartISODateFormatter",
+                    type: "GITHUB"
+                }
+            ]
+        }
+    },
+    {
+        name: "fattura-elettronica",
+        type: "OPENSOURCE",
+        timePeriod: "2018 - 2019",
+        description: "A PHP library to create, update and validate Italian electronic invoices. Based on another library, I contributed by implementing most of the missing parts of the XML schema definition.",
+        technologies: "PHP,Composer",
+        sortIndex: 11,
+        links: {
+            create: [
+                {
+                    displayName: "fattura-elettronica on GitHub",
+                    content: "https://github.com/InerziaSoft/fattura-elettronica",
+                    type: "GITHUB"
                 }
             ]
         }

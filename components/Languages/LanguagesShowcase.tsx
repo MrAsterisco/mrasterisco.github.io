@@ -15,7 +15,7 @@ const LanguagesShowcase = (
         <ul className={styles.languagesList}>
             {
                 languages
-                    .map((l) => <LanguageTile language={l} />)
+                    .map((l) => <LanguageTile key={l.id} language={l} />)
             }
         </ul>
     )

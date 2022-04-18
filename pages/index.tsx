@@ -5,6 +5,7 @@ import { GetServerSideProps, InferGetServerSidePropsType } from 'next'
 
 import styles from '../styles/Home.module.sass'
 import Link from 'next/link'
+import ProjectsShowcase from '../components/Projects/ProjectsShowcase'
 
 export default function Home(
   { 
@@ -21,8 +22,9 @@ export default function Home(
           Interested in my complete work experience? <a href="#" target="_blank">Visit my LinkedIn profile</a>.
         </div>
       </section>
-      <section>
+      <section className={styles.scrollableSection}>
         <SectionTitle title='What are some of my projects?' subtitle="A unordered showcase of the projects, apps and websites I created or contributed to:" />
+        <ProjectsShowcase projects={projects} />
         <div className={styles.sectionFooter}>
           Interested in the full list? <Link href="/projects"><a>See my projects</a></Link>
         </div>

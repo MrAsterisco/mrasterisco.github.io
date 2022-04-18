@@ -39,6 +39,8 @@ model Link {
 enum LinkType {
   APPSTORE
   GENERIC
+  GITHUB
+  GITLAB
 }
 
 model Language {
