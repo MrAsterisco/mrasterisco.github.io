@@ -6,7 +6,7 @@ export const Enterprise: Prisma.ProjectCreateInput[] = [
         type: "ENTERPRISE",
         timePeriod: "2022 - present",
         description: "Focusing mostly on the iOS side, I contribute daily to the foundation of the app to ensure a smoooth experience for users and developers.",
-        technologies: "Swift,React,AWS,Kotlin,Yarn,Jenkins,CocoaPods,Gradle",
+        technologies: "Swift,Objective-C,JavaScript,TypeScript,React,AWS,Kotlin,Yarn,Jenkins,CocoaPods,Gradle,Apple Pay,Firebase,Sentry",
         links: {
             create: [
                 {
@@ -44,7 +44,7 @@ export const Enterprise: Prisma.ProjectCreateInput[] = [
         type: "ENTERPRISE",
         timePeriod: "2016 - present",
         description: "Meteo (\"Weather\" in Italian) is a complex system composed of a fully-featured website and a bare-bones server infrastructure, involving multiple technologies, that allow broadcasting of two offline-only devices to the Internet. Together with other peers from InerziaSoft, I designed, built and optimized the system to work 24/7 with almost zero human interaction needed. The system is still in use today and serves hundreds of users every day.",
-        technologies: "Core,jQuery,PostgreSQL,PHP,SASS,RealVNC,OpenVPN,pfSense,VMWare ESXI,UptimeRobot",
+        technologies: "Core,JavaScript,jQuery,PostgreSQL,PHP,Composer,Yarn,SASS,RealVNC,OpenVPN,pfSense,VMWare ESXI,UptimeRobot",
         links: {
             create: [
                 {
@@ -66,7 +66,7 @@ export const Enterprise: Prisma.ProjectCreateInput[] = [
         type: "ENTERPRISE",
         timePeriod: "2013 - present",
         description: "Dispatch is a cross functional management system conceived specifically for Harbor Pilots and Mooring Men of the Ports of Savona, Vado Ligure and Imperia. Dispatch was originally developed to be installed on-premises, but it has since evolved into Dispatch in the Cloud, which allows our users to benefit of a more powerful system that's always available without breaking the bank. Dispatch includes a number of smart features, such as automatic invoices and balances, effective statistics and more. The system began operating as primary solution for the Harbor Pilots in 2015; the next year, I contributed to the deploy of the system in the cloud for the Moorning Men. The system has zero minutes of downtime to this day.",
-        technologies: "Core,jQuery,PostgreSQL,PHP,SASS",
+        technologies: "Core,JavaScript,jQuery,PostgreSQL,PHP,SASS,Composer",
         links: {
             create: [
                 {
@@ -108,7 +108,7 @@ export const Enterprise: Prisma.ProjectCreateInput[] = [
         timePeriod: "2020 - 2022",
         type: "ENTERPRISE",
         description: "I contributed to many different projects including Stocard Pay, improvements to the Account system, implementing WebSocket communication with the backend, and many others.",
-        technologies: "Swift,SwiftUI,RxSwift,WidgetKit,TypeScript,Kotlin,WebSocket,Apple Pay,WatchKit,Bitrise,CocoaPods",
+        technologies: "Swift,UIKit,SwiftUI,RxSwift,WidgetKit,TypeScript,Kotlin,WebSocket,Apple Pay,WatchKit,Bitrise,CocoaPods,Kotlin Multiplatform",
         links: {
             create: [
                 {
@@ -130,7 +130,7 @@ export const Enterprise: Prisma.ProjectCreateInput[] = [
         timePeriod: "2015 - 2019",
         type: "ENTERPRISE",
         description: "I built the apps for iOS and Android from scratch, leading the Mobile team of Pillo Health. I also participated substantially in defining the system architecture and definining the company operating model.",
-        technologies: "Swift,Kotlin,Kotlin MultiPlatform,RxSwift,RxKotlin,Azure,Azure DevOps,CocoaPods,Carthage,Gradle",
+        technologies: "UIKit,Swift,Kotlin,Kotlin Multiplatform,RxSwift,RxKotlin,Azure,Azure DevOps,CocoaPods,Carthage,Gradle,App Center,Sentry,Twilio",
         links: {
             create: [
                 {
@@ -152,7 +152,7 @@ export const Enterprise: Prisma.ProjectCreateInput[] = [
         timePeriod: "2015 - 2017",
         type: "ENTERPRISE",
         description: "During this period, I contributed to multiple Web Apps developed in C# for many different scopes and different customers. I drove and built some new features, but my main focus was on improving performances, general mainteinance, and support.",
-        technologies: "ASP.NET MVC,Oracle,TFS,LINQ,Entity Framework",
+        technologies: "C#,ASP.NET MVC,Oracle,TFS,LINQ,Entity Framework",
         sortIndex: 8
     },
     {
@@ -180,7 +180,7 @@ export const Products: Prisma.ProjectCreateInput[] = [
         type: "PRODUCTS",
         timePeriod: "2021 - present",
         description: "InerziaTimer is an app for macOS that focuses on one thing: timers. While this was originally my dad's idea, I recently took over the development of version 3.0. I am currently working on a brand new implementation which will support multiple timers, a sleek new UI (built in SwiftUI) and many other advanced features. I've putting in the hours to bring the new version of InerziaTimer to the App Store, but I do not want to rush it and release an half-backed product to the thousands of users that use InerziaTimer already every day. So, stay tuned!",
-        technologies: "SwiftUI,Core Data,Combine",
+        technologies: "SwiftUI,Core Data,Combine,Swift Package Manager",
         sortIndex: 0,
         links: {
             create: [
@@ -202,7 +202,7 @@ export const Products: Prisma.ProjectCreateInput[] = [
         type: "PRODUCTS",
         timePeriod: "2020 - present",
         description: "Redirekt is an app for iOS, iPadOS and macOS that allows you to store your bookmarks in a browser-indipendent fashion; it also supports smart rules to help you navigate the crazy amount of browsers that exist nowadays. Redirekt is free to use with fair use limits; for advanced users, Redirekt Pro is offered with a very cheap subscription. I built this product from scratch, driving it from the concept to the first version on the App Store, and now continuing to work on it with new features, bug fixes and improvements.",
-        technologies: "Swift,Firebase,UIKit,Mac Catalyst,RevenueCat,AppCenter",
+        technologies: "Swift,Firebase,UIKit,Mac Catalyst,RevenueCat,AppCenter,WidgetKit,RxSwift",
         sortIndex: 1,
         links: {
             create: [
@@ -224,7 +224,7 @@ export const Products: Prisma.ProjectCreateInput[] = [
         type: "PRODUCTS",
         timePeriod: "2007 - present",
         description: "InerziaIcon is the first app I've ever created. I started working on it in 2007, experimenting around with AppleScript Studio, but it has since developed into a fully featured tool to manage and change icons on your Mac. In 2012, I rewrote it completely in Objective-C and released it on the App Store with InerziaSoft. The app featured an iTunes-like UI, allowing users to add, sort and edit their icons. It was also trying to compete with the omnipresent CandyBar by providing features to change the system icons. In 2020, I finally found the time to rewrite it from scratch in Swift, adding support for SVG and PDF icons, and switch to a refreshed business model based on in-app purchases.",
-        technologies: "Swift,Objective-C,AppKit,RevenueCat,AppCenter,SVGKit",
+        technologies: "Swift,Objective-C,AppKit,Core Data,RevenueCat,AppCenter,SVGKit",
         sortIndex: 2,
         links: {
             create: [
@@ -254,7 +254,7 @@ export const Products: Prisma.ProjectCreateInput[] = [
         type: "PRODUCTS",
         timePeriod: "2012 - 2015",
         description: "Built for the pre-Netflix era, this app allowed macOS users to manage their movies catalogue. Among other features that made it the iTunes for movies, it also featured a custom movie player based on VLCKit and the ability to import data automatically from TMBD and Wikipedia. The app has been discontinued after the debut of Netflix in Italy in 2015.",
-        technologies: "Objective-C,AppKit,VLCKit",
+        technologies: "Objective-C,AppKit,Core Data,VLCKit",
         sortIndex: 3
     }
 ]
@@ -355,7 +355,7 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         type: "OPENSOURCE",
         timePeriod: "2016 - present",
         description: "Core is a framework to build web applications in PHP and JavaScript. It currently moves most of the Enterprise web apps of InerziaSoft with great performances and stability. It features advanced functions such as automatic routing discovery, APIs, authentication, ORM and more. It is based on the FatFree framework.",
-        technologies: "PHP,JavaScript,Python,FatFree,Composer,NPM",
+        technologies: "Core,PHP,JavaScript,Python,FatFree,Composer,NPM",
         sortIndex: 5,
         links: {
             create: [

@@ -48,4 +48,5 @@ model Language {
   iconUri String
   name String
   description String
+  sort Int
 }

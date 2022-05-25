@@ -1,6 +1,6 @@
 import styles from '../../styles/Hero.module.sass'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faInstagram, faLinkedin, faMedium } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faInstagram, faLinkedin, faTwitter, faMedium } from '@fortawesome/free-brands-svg-icons'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
@@ -26,8 +26,9 @@ export default function Hero() {
             </nav>
 
             <div className={styles.socialContainer}>
-              <a href="https://github.com/MrAsterisco" target='_blank'><FontAwesomeIcon icon={faGithub} /></a>
               <a href="https://www.linkedin.com/in/alessiomoiso1993" target='_blank'><FontAwesomeIcon icon={faLinkedin} /></a>
+              <a href="https://github.com/MrAsterisco" target='_blank'><FontAwesomeIcon icon={faGithub} /></a>
+              <a href="https://twitter.com/MrAsterisco93" target='_blank'><FontAwesomeIcon icon={faTwitter} /></a>
               <a href='https://www.instagram.com/mrasterisco' target='_blank'><FontAwesomeIcon icon={faInstagram} /></a>
               <a href='https://medium.com/@alessio.mm' target='_blank'><FontAwesomeIcon icon={faMedium} /></a>
             </div>

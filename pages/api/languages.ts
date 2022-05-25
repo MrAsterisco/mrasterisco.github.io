@@ -7,6 +7,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     res
         .status(200)
         .json(
-            await prisma.language.findMany()
+            await prisma.language.findMany({
+                orderBy: {sort: "asc"}
+            })
         )
 }

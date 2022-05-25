@@ -2,7 +2,7 @@
 CREATE TYPE "ProjectType" AS ENUM ('ENTERPRISE', 'PRODUCTS', 'OPENSOURCE');
 
 -- CreateEnum
-CREATE TYPE "LinkType" AS ENUM ('APPSTORE', 'GENERIC');
+CREATE TYPE "LinkType" AS ENUM ('APPSTORE', 'GENERIC', 'GITHUB', 'GITLAB');
 
 -- CreateTable
 CREATE TABLE "Project" (
@@ -34,6 +34,7 @@ CREATE TABLE "Language" (
     "iconUri" TEXT NOT NULL,
     "name" TEXT NOT NULL,
     "description" TEXT NOT NULL,
+    "sort" INTEGER NOT NULL,
 
     CONSTRAINT "Language_pkey" PRIMARY KEY ("id")
 );
