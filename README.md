@@ -9,7 +9,7 @@ You are free to fork this Portfolio and use it for yourself, if you like it.
 ### Requirements
 - NodeJS 16 or later.
 - PostgreSQL 12 or higher.
-- Yarn
+- Yarn.
 
 ### Setup
 Run the following command to download the required dependencies:
