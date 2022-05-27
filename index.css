@@ -1,15 +1,3 @@
-@media screen and (max-width: 900px) {
-    section {
-        width: 90%;
-    } 
-}
-
-@media screen and (min-width: 901px) {
-    section {
-        width: 900px;
-    }
-}
-
 body {
     background-color: #f0f0f0;
     margin: 0;
@@ -18,7 +6,11 @@ body {
     padding-right: 0;
     color: #333333;
     font-family: 'Lato', sans-serif;
-    padding-bottom: 1em;
+    text-align: center;
+}
+
+p {
+    color: #666;
 }
 
 a {
@@ -29,105 +21,4 @@ a {
 
 a:hover {
     color: #e32400;
-}
-
-h3 {
-    margin-top: 0;
-}
-
-h4 {
-    margin-top: 0;
-}
-
-section {
-    padding: 2em 3em;
-    text-align: center;
-    background-color: white;
-    border-radius: 1em;
-    box-shadow: 0 0 10px #e0e0e0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1em;
-}
-
-section > img {
-    border-radius: 1em;
-    width: 120px;
-    height: 120px;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.workplace > h3 {
-    color: #555;
-    font-size: 14px;
-}
-
-.workplace > img {
-    width: 140px;
-}
-
-.workplace > span {
-    color: #888;
-    font-weight: normal;
-}
-
-.workplace > h4 {
-    margin-top: 0;
-}
-
-.workplace > a {
-    font-size: 11px;
-}
-
-#profile {
-    width: 120px;
-    height: 120px;
-    background-image: url("profile.jpeg");
-    background-position: center;
-    background-size: cover;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 1em;
-}
-
-section > ul > li {
-    display: inline-block;
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    width: 250px;
-    border: 1px solid #eee;
-    padding: 1em;
-    border-radius: 1em;
-    vertical-align: center;
-}
-
-section > ul > li > img {
-    width: 120px;
-}
-
-#twitter {
-    border-color: #1DA1F2;
-}
-
-#linkedin {
-    border-color: #2867B2;
-}
-
-#instagram {
-    border-color: #C13584;
-}
-
-#medium {
-    border-color: #000;
-}
-
-#opensource > li > p {
-    font-size: 11px;
 }
