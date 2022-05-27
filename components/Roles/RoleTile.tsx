@@ -32,7 +32,7 @@ const RoleTile = (
         <div className={styleName}>
             <div className={styles.cardWorkContent}>
                 <div className={styles.workLogoContainer}>
-                    <Image src={logoUri} layout='responsive' width={logoWidth} height={logoHeight} />
+                    <Image src={logoUri} layout='responsive' width={logoWidth} height={logoHeight} alt={role} />
                 </div>
                 <p className={styles.workTitle}>
                     {role}
@@ -41,7 +41,7 @@ const RoleTile = (
                     <span><FontAwesomeIcon icon={faCalendarDays} /></span>
                     {date}
                 </p>
-                <a href={websiteUri} className={styles.workLink} target='_blank'>
+                <a href={websiteUri} className={styles.workLink} rel='noreferrer' target='_blank'>
                     <span><FontAwesomeIcon icon={faLink} /></span>
                     {websiteDescription}
                 </a>

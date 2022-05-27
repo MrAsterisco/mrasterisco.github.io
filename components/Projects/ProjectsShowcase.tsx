@@ -12,26 +12,25 @@ const ProjectsShowcase = (
         projects
     }: ProjectsShowcaseProps
 ) => {
-    function shuffleArray(arr) {
-        arr.sort(() => Math.random() - 0.5);
-    }
-
-    function shuffleProjects() {
-        shuffleArray(projects)
-        setAnimationClass(styles.animationClass)
-        setShowcasedProjects(projects.slice(0, 3))
-        setTimeout(() => setAnimationClass(""), 5000)
-    }
-
     const [showcasedProjects, setShowcasedProjects] = useState([])
     const [animationClass, setAnimationClass] = useState("")
 
     useEffect(() => {
-        shuffleProjects()
+        function shuffleArray(arr) {
+            arr.sort(() => Math.random() - 0.5);
+        }
+    
+        function shuffleProjects() {
+            shuffleArray(projects)
+            setAnimationClass(styles.animationClass)
+            setShowcasedProjects(projects.slice(0, 3))
+            setTimeout(() => setAnimationClass(""), 5000)
+        }
 
+        shuffleProjects()
         const timer = setInterval(shuffleProjects, 10000)
         return () => clearInterval(timer)
-    }, [])
+    }, [projects])
 
     return (
         <div className={styles.projectColumnsContainer}>
