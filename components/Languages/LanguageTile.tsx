@@ -15,7 +15,7 @@ const LanguageTile = (
         <li key={language.id} className={styles.cardLanguage}>
             <div className={styles.cardLanguageContent}>
                 <div className={styles.cardLanguageIcon}>
-                    <Image src={language.iconUri} width={400} height={400} layout='responsive' />
+                    <Image src={language.iconUri} width={400} height={400} alt={language.name} layout='responsive' />
                 </div>
                 <div className={styles.cardLanguageText}>
                     <p className={styles.cardLanguageTitle}>
