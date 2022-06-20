@@ -31,7 +31,7 @@ export default function Hero() {
         <div className={styles.heroBody}>
           <div className={styles.heroContent}>
             <p className={styles.heroTitle}>Hi, my name is <span>Alessio</span>.</p>
-            <p className={styles.heroSubtitle}>I build stuff for computers, smartphones and the web.</p>
+            <p className={styles.heroSubtitle}>I contribute daily to apps used by millions of people.</p>
 
             <nav className={styles.mainNavbar}>
               {
