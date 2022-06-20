@@ -8,7 +8,7 @@ export default function RolesShowcase() {
                 <RoleTile 
                     styleName={styles.klarna} 
                     role='Senior Engineer'
-                    roleDescription='I am part of one of the core teams revolving around the <span>Klarna app</span>. I focus mostly on the <span>iOS ecosystem</span>, by constantly improving the workflow and the tools that other teams use to build a variety of different features. I also contribute to maintaining our <span>core backend services</span> on AWS, as well as perform mainteinance on <span>the pipelines</span> that build the final deliverable product. Before the acquisition, I was working in the <span>Stocard iOS team</span>, contributing to <span>Stocard Pay</span> and various other parts of the app.'
+                    roleDescription='As part of the <span>main foundation team</span> in the App domain, I have been working to improve the Klarna app on iOS. I <span>lead a number of initiatives</span> in cross-functional teams aimed at <span>improving the user and the developer experience</span>, coaching and supporting other teams when they need to interact with low-level native features. I also work directly on the technical architecture of the Klarna app for iOS and its extensions. I have been involved from the beginning into the engineering hiring pipeline, <span>interviewing and inspiring talents</span> to join Klarna.'
                     logoUri='/klarna.webp'
                     logoWidth={2387}
                     logoHeight={534}
@@ -20,9 +20,9 @@ export default function RolesShowcase() {
             <div className={styles.rightWorkContent}>
                 <RoleTile
                     styleName={styles.inerziasoft}
-                    role='Product Specialist & Mac Division Coordinator'
+                    role='Product Specialist'
                     logoUri='/inerziasoft.webp'
-                    roleDescription={"As Product Specialist, I <span>lead the development</span> of our most successful products in both the B2B and B2C sectors. I usually work with <span>Swift and Objective-C</span>, building iOS and macOS apps used by thousands of users. On the web, I normally deal with <span>PHP, JavaScript & TypeScript</span> (with and without frameworks such as <span>React, Next.js and jQuery</span>). I am also responsible of <span>managing our servers infrastructure</span>, supporting our website and our enterprise customers."}
+                    roleDescription={"As Product Specialist, I’m responsible of leading some of our <span>most successful products</span> in both the B2B and B2C sectors. I usually work with Swift and Objective-C (<span>building iOS and macOS apps used by thousands of users</span>), PHP, JavaScript, TypeScript and some of the most famous JS frameworks (such as jQuery and React). I am also responsible of managing PostgreSQL instances for both our website and our <span>enterprise customers</span>. I also built from scratch and now manage some ad-hoc network infrastructures."}
                     logoWidth={4109}
                     logoHeight={1113}
                     date='July 2012 (not including previous occasional contributions) - present'
