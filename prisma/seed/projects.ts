@@ -278,12 +278,63 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         }
     },
     {
+        name: "Gymspot",
+        type: "OPENSOURCE",
+        timePeriod: "2022 - present",
+        description: "An alternative workout tracker written in SwiftUI. I started working on it to learn how to structure an app in SwiftUI, but mainly because I needed a workout tracker. It is and will always be an ongoing process and it will also be distributed by InerziaSoft on the App Store, once it gets to a releasable state.",
+        technologies: "Swift,Firebase,SwiftUI",
+        sortIndex: 1,
+        links: {
+            create: [
+                {
+                    displayName: "Gymspot on GitHub",
+                    content: "https://github.com/MrAsterisco/Gymspot",
+                    type: "GITHUB"
+                }
+            ]
+        }
+    },
+    {
+        name: "ComboPicker",
+        type: "OPENSOURCE",
+        timePeriod: "2022 - present",
+        description: "A SwiftUI component that allows the user to input a value by choosing from a predefined set or by inputing a custom one.",
+        technologies: "Swift,SwiftUI",
+        sortIndex: 2,
+        links: {
+            create: [
+                {
+                    displayName: "ComboPicker on GitHub",
+                    content: "https://github.com/MrAsterisco/ComboPicker",
+                    type: "GITHUB"
+                }
+            ]
+        }
+    },
+    {
+        name: "ConcaveProgressView",
+        type: "OPENSOURCE",
+        timePeriod: "2022 - present",
+        description: "A slightly curved progress view written in SwiftUI. It is built to be a drop-in replacement of a normal ProgressView, to be used when you need to add a bit of spice to your UI.",
+        technologies: "Swift,SwiftUI,DocC",
+        sortIndex: 3,
+        links: {
+            create: [
+                {
+                    displayName: "ConcaveProgressView on GitHub",
+                    content: "https://github.com/MrAsterisco/ConcaveProgressView",
+                    type: "GITHUB"
+                }
+            ]
+        }
+    },
+    {
         name: "RxFireAuth",
         type: "OPENSOURCE",
         timePeriod: "2020 - present",
         description: "A Reactive-compatible wrapper around the Firebase Authentication SDK for iOS written in Swift and compatible with CocoaPods and Swift Package Manager. While I created this library to simplify the development of Redirekt for iOS, the supported platforms also include Mac Catalyst and macOS.",
         technologies: "Swift,Firebase,CocoaPods,Swift Package Manager,AppAuth,RxSwift,Jazzy",
-        sortIndex: 1,
+        sortIndex: 4,
         links: {
             create: [
                 {
@@ -305,7 +356,7 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         timePeriod: "2021 - present",
         description: "A mirror version of RxFireAuth for Android. The library is entirely written in Kotlin and it's helping me laying the foundation of Redirekt for Android.",
         technologies: "Kotlin,Firebase,Gradle,RxKotlin",
-        sortIndex: 2,
+        sortIndex: 5,
         links: {
             create: [
                 {
@@ -322,7 +373,7 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         timePeriod: "2019 - present",
         description: "A Kotlin Multiplatform implementation of the Time library for Android. The library uses 100% platform-independent code, which makes it compatible with any platform where Kotlin is supported.",
         technologies: "Kotlin,Kotlin Multiplatform,Gradle,GitHub Packages",
-        sortIndex: 3,
+        sortIndex: 6,
         links: {
             create: [
                 {
@@ -339,7 +390,7 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         timePeriod: "2019 - present",
         description: "An efficient implementation of a sorted list for Kotlin Multiplatform, based on an AVL tree. The library uses 100% platform-independent code.",
         technologies: "Kotlin,Kotlin Multiplatform,Gradle,GitHub Packages",
-        sortIndex: 4,
+        sortIndex: 7,
         links: {
             create: [
                 {
@@ -356,7 +407,7 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         timePeriod: "2016 - present",
         description: "Core is a framework to build web applications in PHP and JavaScript. It currently moves most of the Enterprise web apps of InerziaSoft with great performances and stability. It features advanced functions such as automatic routing discovery, APIs, authentication, ORM and more. It is based on the FatFree framework.",
         technologies: "Core,PHP,JavaScript,Python,FatFree,Composer,NPM",
-        sortIndex: 5,
+        sortIndex: 8,
         links: {
             create: [
                 {
@@ -373,7 +424,7 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         timePeriod: "2021 - present",
         description: "A Homebridge plugin to control RemoteNow-compatible HiSense TVs. I built it from scratch to explore the Homebridge platform and also add my own TV to HomeKit. It is based on an existing Python script that communicates with the TV via MQTT.",
         technologies: "TypeScript,Python,MQTT,Homebridge,NPM",
-        sortIndex: 6,
+        sortIndex: 9,
         links: {
             create: [
                 {
@@ -390,7 +441,7 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         timePeriod: "2020 - present",
         description: "A simple UILabel subclass that supports corner radii and content insets without breaking AutoLayout.",
         technologies: "Swift,UIKit,CocoaPods,Swift Package Manager",
-        sortIndex: 7,
+        sortIndex: 10,
         links: {
             create: [
                 {
@@ -407,7 +458,7 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         timePeriod: "2019 - 2020",
         description: "A fork of a Java library that implements the OAuth2-Password standard. I converted the library to Kotlin with some minor improvements. While the repository is still available, it is currently in an unsupported state.",
         technologies: "Kotlin,Gradle,OAuth",
-        sortIndex: 8,
+        sortIndex: 11,
         links: {
             create: [
                 {
@@ -424,7 +475,7 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         timePeriod: "2017 - 2019",
         description: "A fork of the original MSAL SDK from Microsoft. The library allows users to authenticate to your app using Microsoft Azure Active Directory. The original fork by Microsoft had a lot of issues and was not suitable for the needs of the Pillo Health at the time.",
         technologies: "Objective-C,Azure,CocoaPods,Azure Active Directory",
-        sortIndex: 9,
+        sortIndex: 12,
         links: {
             create: [
                 {
@@ -441,7 +492,7 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         timePeriod: "2018 - 2019",
         description: "An improved implementation of a DateFormatter that understands the ISO format. While Apple provides an implementation, it does not support parsing different formats at the same time, which is what I focused on in this small library. The library is compatible with iOS, macOS, watchOS and tvOS.",
         technologies: "Swift,CocoaPods",
-        sortIndex: 10,
+        sortIndex: 13,
         links: {
             create: [
                 {
@@ -458,7 +509,7 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         timePeriod: "2018 - 2019",
         description: "A PHP library to create, update and validate Italian electronic invoices. Based on another library, I contributed by implementing most of the missing parts of the XML schema definition.",
         technologies: "PHP,Composer",
-        sortIndex: 11,
+        sortIndex: 14,
         links: {
             create: [
                 {
