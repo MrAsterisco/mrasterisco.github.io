@@ -9,11 +9,11 @@ export default function GetInTouch() {
 
     return (
         <div>
-            <a target='_blank' href='https://www.linkedin.com/in/alessiomoiso1993' className={styles.getInTouch}>
+            <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/alessiomoiso1993' className={styles.getInTouch}>
                 <FontAwesomeIcon icon={faLinkedin} />
                 <span className={styles.buttonTitle}>Get in Touch</span>
             </a>
-            <a target='_blank' href='https://github.com/MrAsterisco' className={styles.followGitHub}>
+            <a target='_blank' rel='noreferrer' href='https://github.com/MrAsterisco' className={styles.followGitHub}>
             <FontAwesomeIcon icon={faGithub} />
                 <span className={styles.buttonTitle}>See my Code</span>
             </a>

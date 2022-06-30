@@ -176,34 +176,12 @@ export const Enterprise: Prisma.ProjectCreateInput[] = [
 
 export const Products: Prisma.ProjectCreateInput[] = [
     {
-        name: "InerziaTimer",
-        type: "PRODUCTS",
-        timePeriod: "2021 - present",
-        description: "InerziaTimer is an app for macOS that focuses on one thing: timers. While this was originally my dad's idea, I recently took over the development of version 3.0. I am currently working on a brand new implementation which will support multiple timers, a sleek new UI (built in SwiftUI) and many other advanced features. I've putting in the hours to bring the new version of InerziaTimer to the App Store, but I do not want to rush it and release an half-backed product to the thousands of users that use InerziaTimer already every day. So, stay tuned!",
-        technologies: "SwiftUI,Core Data,Combine,Swift Package Manager",
-        sortIndex: 0,
-        links: {
-            create: [
-                {
-                    displayName: "InerziaTimer on InerziaSoft.eu",
-                    content: "https://inerziasoft.eu/products/showcase/inerziatimer",
-                    type: "GENERIC"
-                },
-                {
-                    displayName: "InerziaTimer on the App Store",
-                    content: "https://apps.apple.com/app/id566833665",
-                    type: "APPSTORE"
-                }
-            ]
-        }
-    },
-    {
         name: "Redirekt",
         type: "PRODUCTS",
         timePeriod: "2020 - present",
         description: "Redirekt is an app for iOS, iPadOS and macOS that allows you to store your bookmarks in a browser-indipendent fashion; it also supports smart rules to help you navigate the crazy amount of browsers that exist nowadays. Redirekt is free to use with fair use limits; for advanced users, Redirekt Pro is offered with a very cheap subscription. I built this product from scratch, driving it from the concept to the first version on the App Store, and now continuing to work on it with new features, bug fixes and improvements.",
         technologies: "Swift,Firebase,UIKit,Mac Catalyst,RevenueCat,AppCenter,WidgetKit,RxSwift",
-        sortIndex: 1,
+        sortIndex: 0,
         links: {
             create: [
                 {
@@ -225,7 +203,7 @@ export const Products: Prisma.ProjectCreateInput[] = [
         timePeriod: "2007 - present",
         description: "InerziaIcon is the first app I've ever created. I started working on it in 2007, experimenting around with AppleScript Studio, but it has since developed into a fully featured tool to manage and change icons on your Mac. In 2012, I rewrote it completely in Objective-C and released it on the App Store with InerziaSoft. The app featured an iTunes-like UI, allowing users to add, sort and edit their icons. It was also trying to compete with the omnipresent CandyBar by providing features to change the system icons. In 2020, I finally found the time to rewrite it from scratch in Swift, adding support for SVG and PDF icons, and switch to a refreshed business model based on in-app purchases.",
         technologies: "Swift,Objective-C,AppKit,Core Data,RevenueCat,AppCenter,SVGKit",
-        sortIndex: 2,
+        sortIndex: 1,
         links: {
             create: [
                 {
@@ -236,6 +214,28 @@ export const Products: Prisma.ProjectCreateInput[] = [
                 {
                     displayName: "InerziaIcon on the App Store",
                     content: "https://apps.apple.com/app/id581760164",
+                    type: "APPSTORE"
+                }
+            ]
+        }
+    },
+    {
+        name: "InerziaTimer",
+        type: "PRODUCTS",
+        timePeriod: "2021 - present",
+        description: "InerziaTimer is an app for macOS that focuses on one thing: timers. While this was originally my dad's idea, I recently took over the development of version 3.0. I am currently working on a brand new implementation which will support multiple timers, a sleek new UI (built in SwiftUI) and many other advanced features. I've putting in the hours to bring the new version of InerziaTimer to the App Store, but I do not want to rush it and release an half-backed product to the thousands of users that use InerziaTimer already every day. So, stay tuned!",
+        technologies: "SwiftUI,Core Data,Combine,Swift Package Manager",
+        sortIndex: 2,
+        links: {
+            create: [
+                {
+                    displayName: "InerziaTimer on InerziaSoft.eu",
+                    content: "https://inerziasoft.eu/products/showcase/inerziatimer",
+                    type: "GENERIC"
+                },
+                {
+                    displayName: "InerziaTimer on the App Store",
+                    content: "https://apps.apple.com/app/id566833665",
                     type: "APPSTORE"
                 }
             ]
@@ -271,7 +271,7 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
             create: [
                 {
                     displayName: "This website on GitHub",
-                    content: "https://github.com/MrAsterisco/mrasteris.co",
+                    content: "https://github.com/MrAsterisco/mrasterisco.github.io",
                     type: "GITHUB"
                 }
             ]
