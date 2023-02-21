@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Image from 'next/image'
+import Image from "next/legacy/image";
 import styles from '../../styles/WorkTile.module.sass'
 import { faLink, faCalendarDays } from '@fortawesome/free-solid-svg-icons'
 

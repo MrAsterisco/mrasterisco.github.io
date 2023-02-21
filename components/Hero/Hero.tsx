@@ -40,7 +40,7 @@ export default function Hero() {
                     var classes = [styles.navbarItem]
                     if (isCurrentPage(p)) classes.push(styles.navbarItemActive)
 
-                    return <Link key={p} href={p}><a className={classes.join(" ")}>{nameOfPage(p)}</a></Link>
+                    return <Link key={p} href={p} className={classes.join(" ")}>{nameOfPage(p)}</Link>;
                   })
               }
             </nav>
@@ -57,5 +57,5 @@ export default function Hero() {
       </div>
 
     </div>
-  )
+  );
 }

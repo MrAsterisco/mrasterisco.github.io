@@ -7,14 +7,14 @@ export default function RolesShowcase() {
             <div className={styles.leftWorkContent}>
                 <RoleTile 
                     styleName={styles.klarna} 
-                    role='Senior Engineer'
-                    roleDescription="Part of the App Client Platform team, I have <span>technical ownership</span> of the iOS portion of the Klarna app. I <span>lead several initiative</span> in partnership with cross-functional teams to improve the user and the developer experience, coaching engineers when they need to interact with native features and <span>encouraging collaboration</span> with the Product team. I am <span>responsible for the technical architecture</span> of the iOS project and its extensions, taking a wide range of fundamental decisions and defining new standards to ensure that the Klarna app remains <span>the best shopping app</span>. In Klarna\'s fully remote environment, I support <span>career development</span> for the people I mentor. I am also part of the Engineering Hiring Pipeline, helping to <span>scale our team</span> by leading technical interviews."
-                    logoUri='/klarna.webp'
-                    logoWidth={2387}
-                    logoHeight={534}
-                    date='August 2020 (as part of Stocard, acquired by Klarna in July 2021) - present'
-                    websiteDescription='klarna.com'
-                    websiteUri='https://klarna.com'
+                    role='Lead iOS Engineer'
+                    roleDescription="I lead the UI Team working on Vectornator, the <span>most modern design tool</span> available for iPadOS, iOS, and macOS. I lead the team, <span>setting the technical direction</span>, working with stakeholders to define requirements, contributing to the codebase and company processes, and <span>driving the development of high-quality and testable code</span>. I also work closely with our recruiting team to find incredible new talents to add to our team."
+                    logoUri='/vectornator.webp'
+                    logoWidth={2000}
+                    logoHeight={1834}
+                    date='December 2022 - present'
+                    websiteDescription='vectornator.io'
+                    websiteUri='https://vectornator.io'
                 />
             </div>
             <div className={styles.rightWorkContent}>

@@ -27,7 +27,7 @@ export default function Home(
         <SectionTitle title='What are some of my projects?' subtitle="A unordered showcase of the projects, apps and websites I created or contributed to:" />
         <ProjectsShowcase projects={projects} />
         <div className={styles.sectionFooter}>
-          Interested in the full list? <Link href="/projects"><a>See my projects</a></Link>
+          Interested in the full list? <Link href="/projects">See my projects</Link>
         </div>
       </section>
       <section className={styles.homeSection}>
@@ -39,7 +39,7 @@ export default function Home(
         <GetInTouch />
       </section>
     </div>
-  )
+  );
 }
 
 export const getServerSideProps: GetServerSideProps = async (context) => {

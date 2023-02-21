@@ -2,10 +2,32 @@ import { Prisma } from "@prisma/client";
 
 export const Enterprise: Prisma.ProjectCreateInput[] = [
     {
-        name: "Klarna App",
+        name: "Vectornator",
         type: "ENTERPRISE",
         timePeriod: "2022 - present",
-        description: "Focusing mostly on the iOS side, I contribute daily to the foundation of the app to ensure a smoooth experience for users and developers.",
+        description: "I lead various initiatives to improve the architecture, code quality, and testability of the app and its underlying frameworks. Recently, I have been working on restructuring our navigation architecture to support programmatic navigation. Additionally, I am also working to enable unit tests of screens in an isolated environment.",
+        technologies: "Swift,Objective-C,UIKit,SwiftUI,Swift Package Manager,Fastlane,Bugsnag",
+        links: {
+            create: [
+                {
+                    displayName: "Vectornator Website",
+                    content: "https://vectornator.io",
+                    type: "GENERIC",
+                },
+                {
+                    displayName: "Vectornator on the App Store",
+                    content: "https://apps.apple.com/it/app/vectornator-graphic-design/id1219074514",
+                    type: "APPSTORE"
+                }
+            ]
+        },
+        sortIndex: 0
+    },
+    {
+        name: "Klarna App",
+        type: "ENTERPRISE",
+        timePeriod: "2022",
+        description: "Focusing mostly on the iOS side, I contributed daily to the foundation of the app to ensure a smoooth experience for users and developers.",
         technologies: "Swift,Objective-C,JavaScript,TypeScript,React,AWS,Kotlin,Yarn,Jenkins,CocoaPods,Gradle,Apple Pay,Firebase,Sentry",
         links: {
             create: [
@@ -21,7 +43,7 @@ export const Enterprise: Prisma.ProjectCreateInput[] = [
                 }
             ]
         },
-        sortIndex: 0
+        sortIndex: 1
     },
     {
         name: "InerziaSoft.eu",
@@ -329,12 +351,29 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         }
     },
     {
+        name: "PasswordField",
+        type: "OPENSOURCE",
+        timePeriod: "2023 - present",
+        description: "A password field written in SwiftUI. It allows the suer to toggle the content visibility with the tap of a button, while adapting the UI on all platforms consistently.",
+        technologies: "Swift,SwiftUI",
+        sortIndex: 4,
+        links: {
+            create: [
+                {
+                    displayName: "PasswordField on GitHub",
+                    content: "https://github.com/MrAsterisco/PasswordField",
+                    type: "GITHUB"
+                }
+            ]
+        }
+    },
+    {
         name: "RxFireAuth",
         type: "OPENSOURCE",
         timePeriod: "2020 - present",
         description: "A Reactive-compatible wrapper around the Firebase Authentication SDK for iOS written in Swift and compatible with CocoaPods and Swift Package Manager. While I created this library to simplify the development of Redirekt for iOS, the supported platforms also include Mac Catalyst and macOS.",
         technologies: "Swift,Firebase,CocoaPods,Swift Package Manager,AppAuth,RxSwift,Jazzy",
-        sortIndex: 4,
+        sortIndex: 5,
         links: {
             create: [
                 {
@@ -356,7 +395,7 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         timePeriod: "2021 - present",
         description: "A mirror version of RxFireAuth for Android. The library is entirely written in Kotlin and it's helping me laying the foundation of Redirekt for Android.",
         technologies: "Kotlin,Firebase,Gradle,RxKotlin",
-        sortIndex: 5,
+        sortIndex: 6,
         links: {
             create: [
                 {
@@ -373,7 +412,7 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         timePeriod: "2019 - present",
         description: "A Kotlin Multiplatform implementation of the Time library for Android. The library uses 100% platform-independent code, which makes it compatible with any platform where Kotlin is supported.",
         technologies: "Kotlin,Kotlin Multiplatform,Gradle,GitHub Packages",
-        sortIndex: 6,
+        sortIndex: 7,
         links: {
             create: [
                 {
@@ -390,7 +429,7 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         timePeriod: "2019 - present",
         description: "An efficient implementation of a sorted list for Kotlin Multiplatform, based on an AVL tree. The library uses 100% platform-independent code.",
         technologies: "Kotlin,Kotlin Multiplatform,Gradle,GitHub Packages",
-        sortIndex: 7,
+        sortIndex: 8,
         links: {
             create: [
                 {
@@ -407,7 +446,7 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         timePeriod: "2016 - present",
         description: "Core is a framework to build web applications in PHP and JavaScript. It currently moves most of the Enterprise web apps of InerziaSoft with great performances and stability. It features advanced functions such as automatic routing discovery, APIs, authentication, ORM and more. It is based on the FatFree framework.",
         technologies: "Core,PHP,JavaScript,Python,FatFree,Composer,NPM",
-        sortIndex: 8,
+        sortIndex: 9,
         links: {
             create: [
                 {
@@ -424,7 +463,7 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         timePeriod: "2021 - present",
         description: "A Homebridge plugin to control RemoteNow-compatible HiSense TVs. I built it from scratch to explore the Homebridge platform and also add my own TV to HomeKit. It is based on an existing Python script that communicates with the TV via MQTT.",
         technologies: "TypeScript,Python,MQTT,Homebridge,NPM",
-        sortIndex: 9,
+        sortIndex: 10,
         links: {
             create: [
                 {
@@ -441,7 +480,7 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         timePeriod: "2020 - present",
         description: "A simple UILabel subclass that supports corner radii and content insets without breaking AutoLayout.",
         technologies: "Swift,UIKit,CocoaPods,Swift Package Manager",
-        sortIndex: 10,
+        sortIndex: 11,
         links: {
             create: [
                 {
@@ -458,7 +497,7 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         timePeriod: "2019 - 2020",
         description: "A fork of a Java library that implements the OAuth2-Password standard. I converted the library to Kotlin with some minor improvements. While the repository is still available, it is currently in an unsupported state.",
         technologies: "Kotlin,Gradle,OAuth",
-        sortIndex: 11,
+        sortIndex: 12,
         links: {
             create: [
                 {
@@ -475,7 +514,7 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         timePeriod: "2017 - 2019",
         description: "A fork of the original MSAL SDK from Microsoft. The library allows users to authenticate to your app using Microsoft Azure Active Directory. The original fork by Microsoft had a lot of issues and was not suitable for the needs of the Pillo Health at the time.",
         technologies: "Objective-C,Azure,CocoaPods,Azure Active Directory",
-        sortIndex: 12,
+        sortIndex: 13,
         links: {
             create: [
                 {
@@ -492,7 +531,7 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         timePeriod: "2018 - 2019",
         description: "An improved implementation of a DateFormatter that understands the ISO format. While Apple provides an implementation, it does not support parsing different formats at the same time, which is what I focused on in this small library. The library is compatible with iOS, macOS, watchOS and tvOS.",
         technologies: "Swift,CocoaPods",
-        sortIndex: 13,
+        sortIndex: 14,
         links: {
             create: [
                 {
@@ -509,7 +548,7 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         timePeriod: "2018 - 2019",
         description: "A PHP library to create, update and validate Italian electronic invoices. Based on another library, I contributed by implementing most of the missing parts of the XML schema definition.",
         technologies: "PHP,Composer",
-        sortIndex: 14,
+        sortIndex: 15,
         links: {
             create: [
                 {
