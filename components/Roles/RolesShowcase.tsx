@@ -8,13 +8,13 @@ export default function RolesShowcase() {
                 <RoleTile 
                     styleName={styles.klarna} 
                     role='Lead iOS Engineer'
-                    roleDescription="I lead the UI Team working on Vectornator, the most modern design tool available for iPadOS, iOS, and macOS. I lead the team, setting the technical direction, working with stakeholders to define requirements, contributing to the codebase and company processes, and driving the development of high-quality and testable code. I also work closely with our recruiting team to find incredible new talents to add to our team."
-                    logoUri='/klarna.webp'
-                    logoWidth={2387}
-                    logoHeight={534}
-                    date='August 2020 (as part of Stocard, acquired by Klarna in July 2021) - present'
-                    websiteDescription='klarna.com'
-                    websiteUri='https://klarna.com'
+                    roleDescription="I lead the UI Team working on Vectornator, the <span>most modern design tool</span> available for iPadOS, iOS, and macOS. I lead the team, <span>setting the technical direction</span>, working with stakeholders to define requirements, contributing to the codebase and company processes, and <span>driving the development of high-quality and testable code</span>. I also work closely with our recruiting team to find incredible new talents to add to our team."
+                    logoUri='/vectornator.webp'
+                    logoWidth={2000}
+                    logoHeight={1834}
+                    date='December 2022 - present'
+                    websiteDescription='vectornator.io'
+                    websiteUri='https://vectornator.io'
                 />
             </div>
             <div className={styles.rightWorkContent}>

@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/legacy/image";
 import ILanguage from '../../models/ILanguage'
 import styles from '../../styles/LanguageTile.module.sass'
 
