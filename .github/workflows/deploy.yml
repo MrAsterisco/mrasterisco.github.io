@@ -59,9 +59,10 @@ jobs:
       - name: Add SSH Key
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+          PRIVATE_KEY: ${{ secrets.DEPLOY_KEY }}
         run: |
           ssh-agent -a $SSH_AUTH_SOCK > /dev/null
-          ssh-add - <(echo "${{ secrets.DEPLOY_KEY }}" | base64 -d)
+          ssh-add - <(echo "$PRIVATE_KEY" | base64 -d)
       - name: Rsync Artifact
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
