@@ -27,19 +27,23 @@ jobs:
         run: yarn install --immutable --immutable-cache --check-cache
       - name: Build
         run: yarn build
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v3.1.2
         with:
           path: .
+          if-no-files-found: error
 
-  # Deployment job
-  #deploy:
-    #environment:
-      #name: github-pages
-      #url: ${{ steps.deployment.outputs.page_url }}
-    #runs-on: ubuntu-latest
-   # needs: build
-    #steps:
-     # - name: Deploy to GitHub Pages
-       # id: deployment
-       # uses: actions/deploy-pages@v1
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Download a Build Artifact
+        uses: actions/download-artifact@v2.1.1
+      - name: Deploy via Rsync
+        uses: D3rHase/rsync-deploy-action@v0.2
+        with:
+          HOST: ${{ secrets.DEPLOY_HOST }}
+          PORT: ${{ secrets.DEPLOY_PORT }}
+          USER: ${{ secrets.DEPLOY_USER }}
+          PRIVATE_SSH_KEY: ${{ secrets.DEPLOY_KEY }}
+          SERVER_PATH: ${{ secrets.DEPLOY_FOLDER }}
