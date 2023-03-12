@@ -40,6 +40,7 @@ jobs:
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.2
         with:
+          name: "release"
           path: artifact.zip
           if-no-files-found: error
 
@@ -49,8 +50,13 @@ jobs:
     steps:
       - name: Download a Build Artifact
         uses: actions/download-artifact@v3.0.2
+        with:
+          name: "release"
+          path: artifact.zip
       - name: Unzip Artifact
         run: unzip artifact.zip
+      - name: Remove Zip
+        run: rm -rf artifact.zip
       - name: Add SSH Key
         run: ssh-add <(echo "${{ secrets.DEPLOY_KEY }}" | base64 -d)
       - name: Rsync Artifact
