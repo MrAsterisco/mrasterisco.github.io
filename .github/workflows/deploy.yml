@@ -36,12 +36,12 @@ jobs:
       - name: Build
         run: yarn build
       - name: Zip Artifact
-        run: zip -r artifact.zip * .next
+        run: zip -r release.zip * .next
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.2
         with:
           name: "release"
-          path: artifact.zip
+          path: release.zip
           if-no-files-found: error
 
   deploy:
@@ -52,11 +52,10 @@ jobs:
         uses: actions/download-artifact@v2.1.1
         with:
           name: "release"
-          path: artifact.zip
       - name: Unzip Artifact
-        run: unzip artifact.zip
+        run: unzip release.zip
       - name: Remove Zip
-        run: rm -rf artifact.zip
+        run: rm -rf release.zip
       - name: Add SSH Key
         run: ssh-add <(echo "${{ secrets.DEPLOY_KEY }}" | base64 -d)
       - name: Rsync Artifact
