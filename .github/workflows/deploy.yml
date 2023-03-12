@@ -35,10 +35,12 @@ jobs:
         run: yarn install --immutable --immutable-cache --check-cache
       - name: Build
         run: yarn build
+      - name: Zip Artifact
+        run: zip -r artifact.zip * .next
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.2
         with:
-          path: .
+          path: artifact.zip
           if-no-files-found: error
 
   deploy:
@@ -47,6 +49,8 @@ jobs:
     steps:
       - name: Download a Build Artifact
         uses: actions/download-artifact@v3.0.2
+      - name: Unzip Artifact
+        run: unzip artifact.zip
       - name: Add SSH Key
         run: ssh-add <(echo "${{ secrets.DEPLOY_KEY }}" | base64 -d)
       - name: Rsync Artifact
