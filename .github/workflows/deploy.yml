@@ -56,6 +56,8 @@ jobs:
         run: unzip release.zip
       - name: Remove Zip
         run: rm -rf release.zip
+      - name: Wake SSH Agent
+        run: eval $(ssh-agent -s)
       - name: Add SSH Key
         run: ssh-add <(echo "${{ secrets.DEPLOY_KEY }}" | base64 -d)
       - name: Rsync Artifact
