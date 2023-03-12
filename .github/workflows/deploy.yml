@@ -22,8 +22,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "16"
+          cache: 'yarn'
       - name: Install dependencies
-        run: yarn install --production=true --frozen-lockfile
+        run: yarn install --immutable --immutable-cache --check-cache
       - name: Build
         run: yarn build
       - name: Upload artifact
