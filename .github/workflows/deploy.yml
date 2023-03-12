@@ -23,6 +23,14 @@ jobs:
         with:
           node-version: "16"
           cache: 'yarn'
+      - name: Restore cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            .next/cache
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+          restore-keys: |
+            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
         run: yarn install --immutable --immutable-cache --check-cache
       - name: Build
@@ -38,12 +46,8 @@ jobs:
     needs: build
     steps:
       - name: Download a Build Artifact
-        uses: actions/download-artifact@v2.1.1
-      - name: Deploy via Rsync
-        uses: D3rHase/rsync-deploy-action@v0.2
-        with:
-          HOST: ${{ secrets.DEPLOY_HOST }}
-          PORT: ${{ secrets.DEPLOY_PORT }}
-          USER: ${{ secrets.DEPLOY_USER }}
-          PRIVATE_SSH_KEY: ${{ secrets.DEPLOY_KEY }}
-          SERVER_PATH: ${{ secrets.DEPLOY_FOLDER }}
+        uses: actions/download-artifact@v3.0.2
+      - name: Add SSH Key
+        run: ssh-add <(echo "${{ secrets.DEPLOY_KEY }}" | base64 -d)
+      - name: Rsync Artifact
+        run: rsync -azP --delete -e "ssh -o StrictHostKeyChecking=no -p ${{ secrets.DEPLOY_PORT }}" ./ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_FOLDER }}
