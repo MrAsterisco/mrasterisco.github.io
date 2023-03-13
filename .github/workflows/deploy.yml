@@ -61,4 +61,4 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.DEPLOY_KEY }}
       - name: Rsync Artifact
-        run: rsync -rlpgoDzP --delete -e "ssh -o StrictHostKeyChecking=no -p ${{ secrets.DEPLOY_PORT }}" ./ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_FOLDER }}
+        run: rsync -rlDc --delete -e "ssh -o StrictHostKeyChecking=no -p ${{ secrets.DEPLOY_PORT }}" ./ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_FOLDER }}
