@@ -46,12 +46,34 @@ export const Enterprise: Prisma.ProjectCreateInput[] = [
         sortIndex: 1
     },
     {
+        name: "Aosta Valley Card",
+        type: "ENTERPRISE",
+        timePeriod: "2022 - present",
+        description: "Aosta Valley Card is the official companion app for the card that gives you access to a number of offers and discounts for activities and events in the Aosta Valley. The app is built entirerely in SwiftUI and uses the latest technologies to offer an incredible and engaging experience.",
+        technologies: "SwiftUI,Swift,CoreLocation,Realm,Swift Package Manager",
+        links: {
+            create: [
+                {
+                    displayName: "Aosta Valley Card",
+                    content: "https://www.aostavalleycard.it/",
+                    type: "GENERIC"
+                },
+                {
+                    displayName: "Aosta Valley Card on the App Store",
+                    content: "https://apps.apple.com/it/app/aosta-valley-card/id6448799269",
+                    type: "APPSTORE"
+                }
+            ]
+        },
+        sortIndex: 2
+    },
+    {
         name: "InerziaSoft.eu",
         type: "ENTERPRISE",
         timePeriod: "2017 - present",
         description: "InerziaSoft.eu is the official website of my dad's side hustle \"InerziaSoft\". My contributions in the company are many and a lot of my own products are published under InerziaSoft. The InerziaSoft.eu website allows users to explore our apps, potential customers to discover our Enterprise products, and anybody to ask questions and get support. Together with other peers from InerziaSoft, I rebuilt the website from scratch in 2017. I have been responsible of it ever since, publishing new updates and keeping it up-to-date.",
         technologies: "Core,React,JavaScript,PostgreSQL,SASS",
-        sortIndex: 1,
+        sortIndex: 3,
         links: {
             create: [
                 {
@@ -64,7 +86,7 @@ export const Enterprise: Prisma.ProjectCreateInput[] = [
     {
         name: "Meteo",
         type: "ENTERPRISE",
-        timePeriod: "2016 - present",
+        timePeriod: "2016 - 2023",
         description: "Meteo (\"Weather\" in Italian) is a complex system composed of a fully-featured website and a bare-bones server infrastructure, involving multiple technologies, that allow broadcasting of two offline-only devices to the Internet. Together with other peers from InerziaSoft, I designed, built and optimized the system to work 24/7 with almost zero human interaction needed. The system is still in use today and serves hundreds of users every day.",
         technologies: "Core,JavaScript,jQuery,PostgreSQL,PHP,Composer,Yarn,SASS,RealVNC,OpenVPN,pfSense,VMWare ESXI,UptimeRobot",
         links: {
@@ -73,15 +95,10 @@ export const Enterprise: Prisma.ProjectCreateInput[] = [
                     displayName: "Meteo on InerziaSoft.eu",
                     content: "https://inerziasoft.eu/enterprise/showcase/Meteo",
                     type: "GENERIC"
-                },
-                {
-                    displayName: "Ship's Information Savona Official Website",
-                    content: "https://shipsinformationsavona.it",
-                    type: "GENERIC"
                 }
             ]
         },
-        sortIndex: 2
+        sortIndex: 4
     },
     {
         name: "Dispatch",
@@ -98,7 +115,7 @@ export const Enterprise: Prisma.ProjectCreateInput[] = [
                 }
             ]
         },
-        sortIndex: 3
+        sortIndex: 5
     },
     {
         name: "The InerziaSoft Web Infrastructure",
@@ -123,7 +140,7 @@ export const Enterprise: Prisma.ProjectCreateInput[] = [
                 }
             ]
         },
-        sortIndex: 5
+        sortIndex: 6
     },
     {
         name: "Stocard for iOS",
@@ -145,7 +162,7 @@ export const Enterprise: Prisma.ProjectCreateInput[] = [
                 }
             ]
         },
-        sortIndex: 6
+        sortIndex: 7
     },
     {
         name: "Pria & Pillo Health",
@@ -167,7 +184,7 @@ export const Enterprise: Prisma.ProjectCreateInput[] = [
                 }
             ]
         },
-        sortIndex: 7
+        sortIndex: 8
     },
     {
         name: "Multiple Enterprise Web Apps",
@@ -175,7 +192,7 @@ export const Enterprise: Prisma.ProjectCreateInput[] = [
         type: "ENTERPRISE",
         description: "During this period, I contributed to multiple Web Apps developed in C# for many different scopes and different customers. I drove and built some new features, but my main focus was on improving performances, general mainteinance, and support.",
         technologies: "C#,ASP.NET MVC,Oracle,TFS,LINQ,Entity Framework",
-        sortIndex: 8
+        sortIndex: 9
     },
     {
         name: "Progetto DAE Liguria",
@@ -183,7 +200,7 @@ export const Enterprise: Prisma.ProjectCreateInput[] = [
         type: "ENTERPRISE",
         description: "I built the iOS app from scratch allowing users to locate the closest defibrillator. This app was part of the Progetto DAE Liguria and has been removed from the App Store in 2019.",
         technologies: "Objective-C,UIKit,MapKit,SQL Lite",
-        sortIndex: 9,
+        sortIndex: 10,
         links: {
             create: [
                 {
@@ -220,12 +237,20 @@ export const Products: Prisma.ProjectCreateInput[] = [
         }
     },
     {
+        name: "Gymspot",
+        type: "PRODUCTS",
+        timePeriod: "2022 - present",
+        description: "An alternative workout tracker written in SwiftUI, not yet released to the public. I started working on it to learn how to structure an app in SwiftUI, but mainly because I needed a workout tracker. I am currently working on the main user experience, such as adding new exercises and planning a workout.",
+        technologies: "Swift,Appwrite,SwiftUI,Swift Package Manager",
+        sortIndex: 1
+    },
+    {
         name: "InerziaIcon",
         type: "PRODUCTS",
         timePeriod: "2007 - present",
         description: "InerziaIcon is the first app I've ever created. I started working on it in 2007, experimenting around with AppleScript Studio, but it has since developed into a fully featured tool to manage and change icons on your Mac. In 2012, I rewrote it completely in Objective-C and released it on the App Store with InerziaSoft. The app featured an iTunes-like UI, allowing users to add, sort and edit their icons. It was also trying to compete with the omnipresent CandyBar by providing features to change the system icons. In 2020, I finally found the time to rewrite it from scratch in Swift, adding support for SVG and PDF icons, and switch to a refreshed business model based on in-app purchases.",
         technologies: "Swift,Objective-C,AppKit,Core Data,RevenueCat,AppCenter,SVGKit",
-        sortIndex: 1,
+        sortIndex: 2,
         links: {
             create: [
                 {
@@ -247,7 +272,7 @@ export const Products: Prisma.ProjectCreateInput[] = [
         timePeriod: "2021 - present",
         description: "InerziaTimer is an app for macOS that focuses on one thing: timers. While this was originally my dad's idea, I recently took over the development of version 3.0. I am currently working on a brand new implementation which will support multiple timers, a sleek new UI (built in SwiftUI) and many other advanced features. I've putting in the hours to bring the new version of InerziaTimer to the App Store, but I do not want to rush it and release an half-backed product to the thousands of users that use InerziaTimer already every day. So, stay tuned!",
         technologies: "SwiftUI,Core Data,Combine,Swift Package Manager",
-        sortIndex: 2,
+        sortIndex: 3,
         links: {
             create: [
                 {
@@ -269,7 +294,7 @@ export const Products: Prisma.ProjectCreateInput[] = [
         timePeriod: "2015 - 2016",
         description: "For my first app in Swift, I wanted to build something simple that would involve some network connectivity. This small macOS utility, inspired by the Chromecast home screen, was able to download a new wallpaper every day from Bing or the Chromecast backgrounds directory.",
         technologies: "Swift,AppKit",
-        sortIndex: 3
+        sortIndex: 4
     },
     {
         name: "InerziaStudios",
@@ -277,7 +302,7 @@ export const Products: Prisma.ProjectCreateInput[] = [
         timePeriod: "2012 - 2015",
         description: "Built for the pre-Netflix era, this app allowed macOS users to manage their movies catalogue. Among other features that made it the iTunes for movies, it also featured a custom movie player based on VLCKit and the ability to import data automatically from TMBD and Wikipedia. The app has been discontinued after the debut of Netflix in Italy in 2015.",
         technologies: "Objective-C,AppKit,Core Data,VLCKit",
-        sortIndex: 3
+        sortIndex: 5
     }
 ]
 
@@ -294,23 +319,6 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
                 {
                     displayName: "This website on GitHub",
                     content: "https://github.com/MrAsterisco/mrasterisco.github.io",
-                    type: "GITHUB"
-                }
-            ]
-        }
-    },
-    {
-        name: "Gymspot",
-        type: "OPENSOURCE",
-        timePeriod: "2022 - present",
-        description: "An alternative workout tracker written in SwiftUI. I started working on it to learn how to structure an app in SwiftUI, but mainly because I needed a workout tracker. It is and will always be an ongoing process and it will also be distributed by InerziaSoft on the App Store, once it gets to a releasable state.",
-        technologies: "Swift,Firebase,SwiftUI",
-        sortIndex: 1,
-        links: {
-            create: [
-                {
-                    displayName: "Gymspot on GitHub",
-                    content: "https://github.com/MrAsterisco/Gymspot",
                     type: "GITHUB"
                 }
             ]

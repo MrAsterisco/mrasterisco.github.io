@@ -7,8 +7,8 @@ export default function RolesShowcase() {
             <div className={styles.leftWorkContent}>
                 <RoleTile 
                     styleName={styles.klarna} 
-                    role='Lead iOS Engineer'
-                    roleDescription="I lead the UI Team working on Vectornator, the <span>most modern design tool</span> available for iPadOS, iOS, and macOS. I lead the team, <span>setting the technical direction</span>, working with stakeholders to define requirements, contributing to the codebase and company processes, and <span>driving the development of high-quality and testable code</span>. I also work closely with our recruiting team to find incredible new talents to add to our team."
+                    role='Engineering Manager'
+                    roleDescription="I manage the UI Team working on Vectornator, the <span>most modern design tool</span> available for iPadOS, iOS, and macOS. I lead the team, <span>setting the technical direction</span>, working with stakeholders to define requirements, contributing to the codebase and company processes, and <span>driving the development of high-quality and testable code</span>. I also work closely with our recruiting team to find incredible new talents to add to our team."
                     logoUri='/vectornator.webp'
                     logoWidth={2000}
                     logoHeight={1834}
