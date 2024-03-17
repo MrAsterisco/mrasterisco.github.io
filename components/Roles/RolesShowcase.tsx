@@ -7,14 +7,14 @@ export default function RolesShowcase() {
             <div className={styles.leftWorkContent}>
                 <RoleTile 
                     styleName={styles.klarna} 
-                    role='Engineering Manager'
-                    roleDescription="I manage the UI Team working on Vectornator, the <span>most modern design tool</span> available for iPadOS, iOS, and macOS. I lead the team, <span>setting the technical direction</span>, working with stakeholders to define requirements, contributing to the codebase and company processes, and <span>driving the development of high-quality and testable code</span>. I also work closely with our recruiting team to find incredible new talents to add to our team."
-                    logoUri='/vectornator.webp'
-                    logoWidth={2000}
-                    logoHeight={1834}
+                    role='Senior Engineering Manager'
+                    roleDescription="I <span>lead the Editor Experience domain</span>, which focuses on delivering incredible features to the users of <span>Linearity Curve</span> and <span>Linearity Move</span>. I define and oversee the processes, the critical path, and all the KTLO procedures of the domain. Together with the Group Product Manager and the other PMs, I define and review priorities, gather requirements, and review designs. I am also responsible for <span>mentoring and supporting the Engineering Managers and the Staff Engineers in my domain</span>, providing guidance and help when needed. I am regularly involved in architectural discussions, and, reporting directly to the CTO, I am also responsible for making sure that our business goals are reflected in the technical and product requirements. I am also heavily involved in defining and contributing to our hiring process."
+                    logoUri='/linearity.webp'
+                    logoWidth={142}
+                    logoHeight={147}
                     date='December 2022 - present'
-                    websiteDescription='vectornator.io'
-                    websiteUri='https://vectornator.io'
+                    websiteDescription='linearity.io'
+                    websiteUri='https://linearity.io'
                 />
             </div>
             <div className={styles.rightWorkContent}>

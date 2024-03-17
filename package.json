@@ -13,11 +13,11 @@
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.1.18",
-    "@prisma/client": "4.10.1",
+    "@prisma/client": "5.11.0",
     "babel-plugin-macros": "^3.1.0",
     "bulma": "0.9.4",
     "next": "^13.1.6",
-    "prisma": "4.10.1",
+    "prisma": "5.11.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.49.11",
@@ -33,5 +33,6 @@
   },
   "prisma": {
     "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed/seed.ts"
-  }
+  },
+  "packageManager": "yarn@4.1.1"
 }

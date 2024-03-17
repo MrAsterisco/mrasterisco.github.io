@@ -2,21 +2,26 @@ import { Prisma } from "@prisma/client";
 
 export const Enterprise: Prisma.ProjectCreateInput[] = [
     {
-        name: "Vectornator",
+        name: "Linearity Curve & Linearity Move",
         type: "ENTERPRISE",
         timePeriod: "2022 - present",
-        description: "I lead various initiatives to improve the architecture, code quality, and testability of the app and its underlying frameworks. Recently, I have been working on restructuring our navigation architecture to support programmatic navigation. Additionally, I am also working to enable unit tests of screens in an isolated environment.",
+        description: "I led various initiatives to improve the architecture, code quality, and testability of the app and its underlying frameworks. In 2023, I contributed mostly on the development of Linearity Cloud, our in-house cloud system for storing and syncing files across multiple devices.",
         technologies: "Swift,Objective-C,UIKit,SwiftUI,Swift Package Manager,Fastlane,Bugsnag",
         links: {
             create: [
                 {
-                    displayName: "Vectornator Website",
-                    content: "https://vectornator.io",
+                    displayName: "Linearity Website",
+                    content: "https://linearity.io",
                     type: "GENERIC",
                 },
                 {
-                    displayName: "Vectornator on the App Store",
-                    content: "https://apps.apple.com/it/app/vectornator-graphic-design/id1219074514",
+                    displayName: "Linearity Curve on the App Store",
+                    content: "https://apps.apple.com/app/vectornator-graphic-design/id1219074514",
+                    type: "APPSTORE"
+                },
+                {
+                    displayName: "Linearity Move on the App Store",
+                    content: "https://apps.apple.com/app/linearity-move-animation-maker/id6443677011",
                     type: "APPSTORE"
                 }
             ]
@@ -73,7 +78,7 @@ export const Enterprise: Prisma.ProjectCreateInput[] = [
         timePeriod: "2017 - present",
         description: "InerziaSoft.eu is the official website of my dad's side hustle \"InerziaSoft\". My contributions in the company are many and a lot of my own products are published under InerziaSoft. The InerziaSoft.eu website allows users to explore our apps, potential customers to discover our Enterprise products, and anybody to ask questions and get support. Together with other peers from InerziaSoft, I rebuilt the website from scratch in 2017. I have been responsible of it ever since, publishing new updates and keeping it up-to-date.",
         technologies: "Core,React,JavaScript,PostgreSQL,SASS",
-        sortIndex: 3,
+        sortIndex: 4,
         links: {
             create: [
                 {
@@ -98,7 +103,7 @@ export const Enterprise: Prisma.ProjectCreateInput[] = [
                 }
             ]
         },
-        sortIndex: 4
+        sortIndex: 5
     },
     {
         name: "Dispatch",
@@ -115,7 +120,7 @@ export const Enterprise: Prisma.ProjectCreateInput[] = [
                 }
             ]
         },
-        sortIndex: 5
+        sortIndex: 6
     },
     {
         name: "The InerziaSoft Web Infrastructure",
@@ -123,7 +128,7 @@ export const Enterprise: Prisma.ProjectCreateInput[] = [
         timePeriod: "2016 - present",
         description: "Most of the Enterprise apps published by InerziaSoft are running on a custom server that I built and manage regularly. The server runs ESXI and most of the services are deployed as virtual machines. The infrastructure is secured with pfSense and CloudFlare.",
         technologies: "VMWare ESXI,pfSense,nginx,Cloudflare,UNIX,Python",
-        sortIndex: 4
+        sortIndex: 7
     },
     {
         name: "DispatchConnect",
@@ -140,7 +145,7 @@ export const Enterprise: Prisma.ProjectCreateInput[] = [
                 }
             ]
         },
-        sortIndex: 6
+        sortIndex: 8
     },
     {
         name: "Stocard for iOS",
@@ -162,7 +167,7 @@ export const Enterprise: Prisma.ProjectCreateInput[] = [
                 }
             ]
         },
-        sortIndex: 7
+        sortIndex: 3
     },
     {
         name: "Pria & Pillo Health",
@@ -184,7 +189,7 @@ export const Enterprise: Prisma.ProjectCreateInput[] = [
                 }
             ]
         },
-        sortIndex: 8
+        sortIndex: 10
     },
     {
         name: "Multiple Enterprise Web Apps",
@@ -192,7 +197,7 @@ export const Enterprise: Prisma.ProjectCreateInput[] = [
         type: "ENTERPRISE",
         description: "During this period, I contributed to multiple Web Apps developed in C# for many different scopes and different customers. I drove and built some new features, but my main focus was on improving performances, general mainteinance, and support.",
         technologies: "C#,ASP.NET MVC,Oracle,TFS,LINQ,Entity Framework",
-        sortIndex: 9
+        sortIndex: 11
     },
     {
         name: "Progetto DAE Liguria",
@@ -200,7 +205,7 @@ export const Enterprise: Prisma.ProjectCreateInput[] = [
         type: "ENTERPRISE",
         description: "I built the iOS app from scratch allowing users to locate the closest defibrillator. This app was part of the Progetto DAE Liguria and has been removed from the App Store in 2019.",
         technologies: "Objective-C,UIKit,MapKit,SQL Lite",
-        sortIndex: 10,
+        sortIndex: 12,
         links: {
             create: [
                 {
@@ -376,12 +381,46 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         }
     },
     {
+        name: "MenuItemView",
+        type: "OPENSOURCE",
+        timePeriod: "2024 - present",
+        description: "A subclass of NSView that mimics the behavior of a NSMenuItem. It is built to be used as wrapper of a view that is embedded in an NSMenuItem.",
+        technologies: "Swift,AppKit",
+        sortIndex: 5,
+        links: {
+            create: [
+                {
+                    displayName: "MenuItemView on GitHub",
+                    content: "https://github.com/MrAsterisco/MenuItemView",
+                    type: "GITHUB"
+                }
+            ]
+        }
+    },
+    {
+        name: "TreePicker",
+        type: "OPENSOURCE",
+        timePeriod: "2024 - present",
+        description: "A SwiftUI implementation of an NSSegmentedControl with support for hierarchical data, using menu items.",
+        technologies: "Swift,SwiftUI",
+        sortIndex: 6,
+        links: {
+            create: [
+                {
+                    displayName: "TreePicker on GitHub",
+                    content: "https://github.com/MrAsterisco/TreePicker",
+                    type: "GITHUB"
+                }
+            ]
+        }
+    },
+    {
         name: "RxFireAuth",
         type: "OPENSOURCE",
         timePeriod: "2020 - present",
         description: "A Reactive-compatible wrapper around the Firebase Authentication SDK for iOS written in Swift and compatible with CocoaPods and Swift Package Manager. While I created this library to simplify the development of Redirekt for iOS, the supported platforms also include Mac Catalyst and macOS.",
         technologies: "Swift,Firebase,CocoaPods,Swift Package Manager,AppAuth,RxSwift,Jazzy",
-        sortIndex: 5,
+        sortIndex: 7,
         links: {
             create: [
                 {
@@ -403,7 +442,7 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         timePeriod: "2021 - present",
         description: "A mirror version of RxFireAuth for Android. The library is entirely written in Kotlin and it's helping me laying the foundation of Redirekt for Android.",
         technologies: "Kotlin,Firebase,Gradle,RxKotlin",
-        sortIndex: 6,
+        sortIndex: 8,
         links: {
             create: [
                 {
@@ -415,12 +454,46 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         }
     },
     {
+        name: "HyphenableText",
+        type: "OPENSOURCE",
+        timePeriod: "2023 - present",
+        description: "A SwiftUI view that allows you to hyphenate multi-line text. The library is built to be used as a drop-in replacement of Text.",
+        technologies: "Swift,SwiftUI",
+        sortIndex: 9,
+        links: {
+            create: [
+                {
+                    displayName: "HyphenableText on GitHub",
+                    content: "https://github.com/MrAsterisco/HyphenableText",
+                    type: "GITHUB"
+                }
+            ]
+        }
+    },
+    {
+        name: "DateRangePicker",
+        type: "OPENSOURCE",
+        timePeriod: "2023 - present",
+        description: "A SwiftUI view that allows to select a range of dates from a calendar.",
+        technologies: "Swift,SwiftUI",
+        sortIndex: 10,
+        links: {
+            create: [
+                {
+                    displayName: "DateRangePicker on GitHub",
+                    content: "https://github.com/MrAsterisco/DateRangePicker",
+                    type: "GITHUB"
+                }
+            ]
+        }
+    },
+    {
         name: "Time",
         type: "OPENSOURCE",
         timePeriod: "2019 - present",
         description: "A Kotlin Multiplatform implementation of the Time library for Android. The library uses 100% platform-independent code, which makes it compatible with any platform where Kotlin is supported.",
         technologies: "Kotlin,Kotlin Multiplatform,Gradle,GitHub Packages",
-        sortIndex: 7,
+        sortIndex: 11,
         links: {
             create: [
                 {
@@ -437,7 +510,7 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         timePeriod: "2019 - present",
         description: "An efficient implementation of a sorted list for Kotlin Multiplatform, based on an AVL tree. The library uses 100% platform-independent code.",
         technologies: "Kotlin,Kotlin Multiplatform,Gradle,GitHub Packages",
-        sortIndex: 8,
+        sortIndex: 12,
         links: {
             create: [
                 {
@@ -454,7 +527,7 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         timePeriod: "2016 - present",
         description: "Core is a framework to build web applications in PHP and JavaScript. It currently moves most of the Enterprise web apps of InerziaSoft with great performances and stability. It features advanced functions such as automatic routing discovery, APIs, authentication, ORM and more. It is based on the FatFree framework.",
         technologies: "Core,PHP,JavaScript,Python,FatFree,Composer,NPM",
-        sortIndex: 9,
+        sortIndex: 13,
         links: {
             create: [
                 {
@@ -471,7 +544,7 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         timePeriod: "2021 - present",
         description: "A Homebridge plugin to control RemoteNow-compatible HiSense TVs. I built it from scratch to explore the Homebridge platform and also add my own TV to HomeKit. It is based on an existing Python script that communicates with the TV via MQTT.",
         technologies: "TypeScript,Python,MQTT,Homebridge,NPM",
-        sortIndex: 10,
+        sortIndex: 14,
         links: {
             create: [
                 {
@@ -488,7 +561,7 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         timePeriod: "2020 - present",
         description: "A simple UILabel subclass that supports corner radii and content insets without breaking AutoLayout.",
         technologies: "Swift,UIKit,CocoaPods,Swift Package Manager",
-        sortIndex: 11,
+        sortIndex: 15,
         links: {
             create: [
                 {
@@ -505,7 +578,7 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         timePeriod: "2019 - 2020",
         description: "A fork of a Java library that implements the OAuth2-Password standard. I converted the library to Kotlin with some minor improvements. While the repository is still available, it is currently in an unsupported state.",
         technologies: "Kotlin,Gradle,OAuth",
-        sortIndex: 12,
+        sortIndex: 16,
         links: {
             create: [
                 {
@@ -522,7 +595,7 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         timePeriod: "2017 - 2019",
         description: "A fork of the original MSAL SDK from Microsoft. The library allows users to authenticate to your app using Microsoft Azure Active Directory. The original fork by Microsoft had a lot of issues and was not suitable for the needs of the Pillo Health at the time.",
         technologies: "Objective-C,Azure,CocoaPods,Azure Active Directory",
-        sortIndex: 13,
+        sortIndex: 17,
         links: {
             create: [
                 {
@@ -539,7 +612,7 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         timePeriod: "2018 - 2019",
         description: "An improved implementation of a DateFormatter that understands the ISO format. While Apple provides an implementation, it does not support parsing different formats at the same time, which is what I focused on in this small library. The library is compatible with iOS, macOS, watchOS and tvOS.",
         technologies: "Swift,CocoaPods",
-        sortIndex: 14,
+        sortIndex: 18,
         links: {
             create: [
                 {
@@ -556,7 +629,7 @@ export const OpenSource: Prisma.ProjectCreateInput[] = [
         timePeriod: "2018 - 2019",
         description: "A PHP library to create, update and validate Italian electronic invoices. Based on another library, I contributed by implementing most of the missing parts of the XML schema definition.",
         technologies: "PHP,Composer",
-        sortIndex: 15,
+        sortIndex: 19,
         links: {
             create: [
                 {
