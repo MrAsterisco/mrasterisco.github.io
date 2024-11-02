@@ -3,36 +3,39 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.1.1",
-    "@fortawesome/free-brands-svg-icons": "^6.1.1",
-    "@fortawesome/free-solid-svg-icons": "^6.1.1",
-    "@fortawesome/react-fontawesome": "^0.1.18",
-    "@prisma/client": "5.11.0",
+    "@fortawesome/fontawesome-svg-core": "^6",
+    "@fortawesome/free-brands-svg-icons": "^6",
+    "@fortawesome/free-solid-svg-icons": "^6",
+    "@fortawesome/react-fontawesome": "^0.2",
+    "@prisma/client": "5.21.0",
     "babel-plugin-macros": "^3.1.0",
     "bulma": "0.9.4",
-    "next": "^13.1.6",
-    "prisma": "5.11.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "next": "15.0.2",
+    "prisma": "5.21.0",
+    "react": "19.0.0-rc-02c0e824-20241028",
+    "react-dom": "19.0.0-rc-02c0e824-20241028",
     "sass": "^1.49.11",
-    "sharp": "^0.30.5",
-    "ts-node": "^10.7.0"
+    "sharp": "^0.33",
+    "ts-node": "^10.9"
   },
   "devDependencies": {
-    "@types/node": "^17.0.23",
-    "@types/react": "^18.0.0",
-    "eslint": "8.12.0",
-    "eslint-config-next": "^13.1.6",
+    "@types/node": "^22",
+    "@types/react": "npm:types-react@19.0.0-rc.1",
+    "eslint": "^8.57",
+    "eslint-config-next": "15.0.2",
     "typescript": "^4.6.3"
   },
   "prisma": {
     "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed/seed.ts"
   },
-  "packageManager": "yarn@4.1.1"
+  "packageManager": "yarn@4.5.1",
+  "resolutions": {
+    "@types/react": "npm:types-react@19.0.0-rc.1"
+  }
 }

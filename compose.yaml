@@ -1,0 +1,23 @@
+services:
+  app:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    container_name: portfolio
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:16
+    container_name: portfolio-db
+    ports:
+      - "54320:5432"
+    environment:
+      - POSTGRES_USER=${DATABASE_USER}
+      - POSTGRES_PASSWORD=${DATABASE_PASSWORD}
+      - POSTGRES_DB=${DATABASE_NAME}
