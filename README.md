@@ -23,12 +23,13 @@ You are free to fork this Portfolio and use it for yourself, if you like it.
 Create a `.env` file in the root folder with the following details:
 
 ```
-# Prisma Database URL
+# The following values are used in the Docker Compose stack.
 DATABASE_USER="Portfolio"
 DATABASE_PASSWORD="changeThisPassword!"
 DATABASE_NAME="Portfolio"
-DATABASE_URL="postgresql://Portfolio:changeThisPassword!@localhost:5432/Portfolio"
-# Make sure to use the correct values when composing the DATABASE_URL, because the previous values are used to configure the Docker Compose stack.
+# This value is used by Prisma to connect to the database.
+# If you're using Docker, make sure to leave `postgres` as the host.
+DATABASE_URL="postgresql://Portfolio:changeThisPassword!@postgres:5432/Portfolio"
 
 # API Endpoint
 API_ENDPOINT="http://localhost:3000/api"
@@ -42,18 +43,35 @@ Run the following command to create a Docker Compose stack:
 make run
 ```
 
+Then access the website at [http://localhost:3000](http://localhost:3000).
+
 #### Running natively
 
-> Note: if you're editing this website on a virtual machine that is using Parallels Desktop's shared folders, you will need to symlink the `node_modules` folder to a location that is not on the shared drive.
+Make sure you're running the correct version of NodeJS and Yarn.
+For NodeJS, you can use [N](https://github.com/mklement0/n-install):
 
-You need a PostgreSQL instance running locally.
-Configure your PostgreSQL local instance by creating a new user and a new database.
+```bash
+n $(cat .node_version)
+```
+
+You need a PostgreSQL instance version 12 or later running locally.
+First, connect to the database and create a new role and database:
 
 ```sql
 CREATE ROLE "Portfolio" LOGIN PASSWORD 'changeThisPassword!' SUPERUSER INHERIT CREATEDB CREATEROLE NOREPLICATION;
 CREATE DATABASE "Portfolio";
 GRANT ALL ON DATABASE "Portfolio" TO "Portfolio";
 ```
+
+> Make sure that the values that you're using for the role and database match the ones in the `.env` file.
+
+Then, install the dependencies:
+
+```bash
+yarn install
+```
+
+> Note: if you're editing this website on a virtual machine that is using Parallels Desktop's shared folders, you will need to symlink the `node_modules` folder to a location that is not on the shared drive. This is a limitation of Parallel's shared folders.
 
 Finally, run the first Prisma setup to configure the database:
 
@@ -73,9 +91,11 @@ You should then be able to run the website locally by typing:
 yarn dev
 ```
 
+You can access the website at [http://localhost:3000](http://localhost:3000).
+
 ## Status
 
-This website is **under active development**, but it is deployed to a [Production environment](https://mrasteris.co).
+This website is **under active development**. It is deployed to a [Production environment](https://mrasteris.co).
 
 ## Contributions
 
