@@ -1,6 +1,6 @@
 services:
   portfolio-website:
-    image: ghcr.io/MrAsterisco/mrasterisco.github.io:main
+    image: ghcr.io/mrasterisco/mrasterisco.github.io:main
     deploy:
       replicas: 1
       restart_policy:
