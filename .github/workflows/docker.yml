@@ -59,6 +59,9 @@ jobs:
       attestations: write
       id-token: write
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - uses: twingate/github-action@v1
         with:
           service-key: ${{ secrets.TWINGATE_KEY }}
