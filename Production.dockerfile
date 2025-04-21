@@ -1,4 +1,4 @@
-FROM node:22-alpine AS base
+FROM node:23-alpine AS base
 
 RUN corepack enable
 
@@ -18,7 +18,6 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-RUN yarn prisma generate
 RUN yarn run build
 
 RUN addgroup --system --gid 1001 nodejs
@@ -31,4 +30,4 @@ USER nextjs
 ENV PORT=3000
 ENV HOSTNAME="0.0.0.0"
 
-CMD ["sh", "-c", "yarn prisma migrate reset --force && yarn start"]
+CMD ["sh", "-c", "yarn start"]
