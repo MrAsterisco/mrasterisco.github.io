@@ -1,4 +1,5 @@
 import Container from "./_components/Container";
+import Experience from "./_components/Experience";
 import Footer from "./_components/Footer";
 import Header from "./_components/Header";
 import TechnologyList from "./_components/TechnologyList";
@@ -14,22 +15,7 @@ export default function Home() {
         </p>
       </div>
 
-      <Container 
-        className="mt-12 text-slate-800 dark:text-slate-200 [&_span]:font-bold" 
-        title="My Experience"
-        linkTitle="Learn More >"
-        linkURL="https://www.linkedin.com/in/alessiomoiso1993/"
-      >
-        <div className="mt-6">
-          <h2 className="text-2xl md:text-3xl">5+ Years as <span>Manager</span></h2>
-          <h5 className="text-lg md:text-xl">2+ in <span>Senior Leadership</span></h5>
-        </div>
-
-        <div className="mt-6">
-          <h2 className="text-2xl md:text-3xl">12+ Years as <span>Individual Contributor</span></h2>
-          <h5 className="text-lg md:text-xl">6+ in <span>Building Complex and Scalable Systems</span></h5>
-        </div>
-      </Container>
+      <Experience />
 
       <Container
         className="mt-12"

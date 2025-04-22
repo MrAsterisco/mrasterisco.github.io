@@ -17,7 +17,7 @@ export default function Container({
   linkURL,
 }: ContainerProps) {
   return (
-    <div className={`bg-gray-50 dark:bg-gray-950 lg:rounded-lg shadow mx-auto px-8 md:px-12 lg:px-20 pb-8 ${className}`}>
+    <div className={`bg-gray-50 dark:bg-gray-900 lg:rounded-lg shadow mx-auto px-8 md:px-12 lg:px-20 pb-8 ${className}`}>
       <h4 className='text-accent font-bold pt-8 text-lg'>{title}</h4>
       {children && children}
 

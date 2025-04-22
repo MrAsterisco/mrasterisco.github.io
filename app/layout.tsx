@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { ThemeProvider } from 'next-themes'
 
 export const metadata: Metadata = {
   title: "Alessio Moiso | Portfolio",
@@ -13,9 +14,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="max-w-[1024px] mx-auto sm:px-0 bg-white dark:bg-slate-900">
-        {children}
+    <html lang="en" suppressHydrationWarning>
+      <body className="max-w-[1024px] mx-auto sm:px-0 bg-white dark:bg-black">
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );

@@ -2,9 +2,11 @@
 @import "tailwindcss";
 
 @theme {
-  --color-accent: #c1121f;
-  --color-accent-dark: #780000;
+  --color-accent: #FF6663;
+  --color-accent-dark: #FF8785;
 }
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 body {
   font-family: 'Quicksand', sans-serif;
@@ -18,4 +20,8 @@ a {
 
 a:hover {
   color: var(--color-accent-dark);
+}
+
+.tinted-image {
+  filter: sepia(1) hue-rotate(200deg) saturate(2);
 }

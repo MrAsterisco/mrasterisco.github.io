@@ -1,6 +1,8 @@
+"use client";
 import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
+import ThemeSwitcher from './ThemeSwitcher';
 
 export default function Footer() {
   return (
@@ -11,15 +13,17 @@ export default function Footer() {
 
         <p className='text-xs mt-2'>This website does not collect cookies and does not use any analytics tracking platform.</p>
         <p className='text-xs'><Link href={"https://github.com/MrAsterisco/mrasterisco.github.io"} target='_blank'>View the source code</Link>.</p>
+
+        <ThemeSwitcher />
       </div>
 
       <div className='flex gap-4 mt-8 md:mt-0'>
         <Link href={"https://github.com/MrAsterisco"} target='_blank'>
-          <Image src={'/github.webp'} width={24} height={24} alt="GitHub logo." />
+          <Image className='tinted-image' src={'/github.webp'} width={24} height={24} alt="GitHub logo." />
         </Link>
 
         <Link href={"https://www.linkedin.com/in/alessiomoiso1993/"} target='_blank'>
-          <Image src={'/linkedin.webp'} width={24} height={24} alt="LinkedIn logo." />
+          <Image className='tinted-image' src={'/linkedin.webp'} width={24} height={24} alt="LinkedIn logo." />
         </Link>
       </div>
     </footer>
