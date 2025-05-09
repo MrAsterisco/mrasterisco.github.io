@@ -24,7 +24,7 @@ export default function Header() {
             title="VP of Engineering"
             company="Linearity"
             companyURL="https://linearity.io"
-            startDate="2024-10-01"
+            startDate="2024-09-01"
             logoURL="/linearity.webp"
             logoAlt="Linearity black logo over an orange background."
           />
