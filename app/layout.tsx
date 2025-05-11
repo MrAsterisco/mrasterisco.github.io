@@ -1,11 +1,15 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { ThemeProvider } from 'next-themes'
+
+export const viewport: Viewport = {
+  initialScale: 1,
+  width: "device-width",
+}
 
 export const metadata: Metadata = {
   title: "Alessio Moiso | Portfolio",
   description: "Explore the portfolio of Alessio Moiso, showcasing expertise across several domains, including management, apps and web development, infrastructure, and cloud computing.",
-  viewport: "width=device-width, initial-scale=1",
 };
 
 export default function RootLayout({

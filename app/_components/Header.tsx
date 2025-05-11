@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import Position from './Position';
-import Link from 'next/link';
+import GetInTouchButton from './GetInTouchButton';
 
 export default function Header() {
   return (
@@ -40,7 +40,7 @@ export default function Header() {
           />
         </div>
 
-        <Link className='block border-1 border-accent hover:border-accent-dark shadow text-white rounded-lg px-4 py-2 text-sm uppercase font-bold' href={"https://www.linkedin.com/in/alessiomoiso1993/"} target='_blank'>Get in Touch</Link>
+        <GetInTouchButton />
       </div>
 
       <div className='px-20 pt-8 self-end md:block hidden'>

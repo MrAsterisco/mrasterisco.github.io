@@ -12,16 +12,14 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 
-a {
-  color: var(--color-accent);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: var(--color-accent-dark);
-}
-
 .tinted-image {
   filter: sepia(1) hue-rotate(200deg) saturate(2);
+}
+
+.swiper-slide {
+  opacity: 0.3;
+}
+
+.swiper-slide-visible {
+  opacity: 1;
 }
