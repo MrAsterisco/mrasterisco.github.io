@@ -14,6 +14,10 @@ export default function Footer() {
         </div>
 
         <div className='flex gap-4 mt-8 md:mt-0'>
+          <Link href={"https://medium.com/@alessio.mm"} target='_blank'>
+            <Image className='tinted-image' src={'/medium.webp'} width={24} height={24} alt="Medium logo." />
+          </Link>
+
           <Link href={"https://github.com/MrAsterisco"} target='_blank'>
             <Image className='tinted-image' src={'/github.webp'} width={24} height={24} alt="GitHub logo." />
           </Link>

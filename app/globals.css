@@ -16,6 +16,10 @@ body {
   filter: sepia(1) hue-rotate(200deg) saturate(2);
 }
 
+.tinted-image:hover {
+  filter: sepia(0) hue-rotate(230deg) saturate(1);
+}
+
 .swiper-slide {
   opacity: 0.8;
 }

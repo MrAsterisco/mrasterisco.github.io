@@ -70,6 +70,20 @@ export default function Work() {
           target="_blank"
           title="Check out my GitHub profile" />
       </Container>
+
+      <Container
+        className="mt-12"
+        title="Articles">
+        <p className="text-slate-700 dark:text-slate-300 text-sm">
+          When I have time, I like to write articles about my experiences, my leadership style, and my thoughts on technologies and trends. I don&apos; write as often as I would like, but you can read some of my articles on Medium.
+        </p>
+
+        <Button
+          className="mt-4 inline-block"
+          href="https://medium.com/@alessio.mm"
+          target="_blank"
+          title="Read my articles on Medium" />
+      </Container>
       <Footer />
     </>
   )

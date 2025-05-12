@@ -42,6 +42,7 @@ export default function Leadership() {
             <li>I strive to provide clear direction and expectations to my team.</li>
             <li>I aim to create an environment where my team feels safe to express their ideas and concerns.</li>
             <li>I actively protect the team from disruptions, ensuring they can give their best, regardless of the situation.</li>
+            <li>I prefer asynchronous communication whenever possible, as written words provide clarity, permanence, and greater value than fleeting conversations.</li>
           </ul>
         </Container>
 
@@ -74,18 +75,18 @@ export default function Leadership() {
           <ul className="mt-4 text-slate-700 dark:text-slate-300">
             <li>I strive to create an environment where my team has the tools they need to succeed.</li>
             <li>I believe that most mistakes happen when processes or tool are not set up correctly.</li>
-            <li>I am always looking for ways to improve our flows to make work easier and more efficient.</li>
+            <li>I am always looking for ways to improve flows to make work easier and more efficient.</li>
           </ul>
         </Container>
 
-        <Container title="Don't Forget the Human">
+        <Container title="Don't Forget the Humans Behind the Teams">
           <p className="font-bold">
             I believe that a leader should be a human first.
           </p>
           <ul className="mt-4 text-slate-700 dark:text-slate-300">
             <li>I strive to create an environment where my team feels happy, challenged, and safe.</li>
             <li>I encourage my team to bring their whole selves to work.</li>
-            <li>I strongly believe that humans build value, not money, tools, or AI.</li>
+            <li>I strongly believe that value is created by humans, not by money, tools, or AI.</li>
           </ul>
         </Container>
       </div>
