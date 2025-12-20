@@ -21,10 +21,10 @@ export default function Header() {
 
         <div className='flex-1 justify-self-center'>
           <Position
-            title="VP of Engineering"
+            title="CTO"
             company="Linearity"
             companyURL="https://linearity.io"
-            startDate="2024-09-01"
+            startDate="2025-11-11"
             logoURL="/linearity.webp"
             logoAlt="Linearity black logo over an orange background."
           />

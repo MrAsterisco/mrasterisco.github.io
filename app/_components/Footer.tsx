@@ -5,11 +5,15 @@ import Image from 'next/image';
 import ThemeSwitcher from './ThemeSwitcher';
 
 export default function Footer() {
+  const copyrightStartYear = 2025;
+  const currentYear = new Date().getFullYear();
+  const copyrightYears = currentYear > copyrightStartYear ? `${copyrightStartYear} - ${currentYear}` : `${copyrightStartYear}`;
+
   return (
     <footer className='text-sm text-slate-500 mx-12 mx-8 md:mx-12 lg:mx-20 my-12'>
       <div className="md:flex">
         <div className='flex-1'>
-          <p>Copyright © 2025, Alessio Moiso. All Rights Reserved.</p>
+          <p>Copyright © {copyrightYears}, Alessio Moiso. All Rights Reserved.</p>
           <p>Made with ❤️ in Italy.</p>
         </div>
 
