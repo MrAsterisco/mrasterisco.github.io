@@ -22,7 +22,7 @@ export default function Experience() {
           title="Engineering Manager" />
 
         <ExperienceTile
-          years={12}
+          years={13}
           prefix="as"
           title="Software Engineer" />
       </div>
