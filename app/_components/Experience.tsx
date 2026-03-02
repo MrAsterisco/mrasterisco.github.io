@@ -12,7 +12,7 @@ export default function Experience() {
     >
       <div className="flex flex-col md:flex-row gap-8 mt-12 mb-12">
         <ExperienceTile
-          years={2}
+          years={3}
           prefix="in"
           title="Senior Leadership" />
 
